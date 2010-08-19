@@ -1,0 +1,170 @@
+# $Id: message.properties.en_US,v 1.19 2004/09/07 09:50:57 xrath Exp $
+file.transfer.complete = File transfer completed: "{0}"
+who.added.me = You were added by {0}.
+add.approve = Accept and add this user.
+add.reject = Reject and block this user.
+
+button.add = Add
+button.ok = OK
+button.close = Close
+button.cancel = Cancel
+button.find = Find
+button.file.send = SendFile
+button.submit = Submit(S)
+
+checkbox.use = Use
+
+title.adduser = Add a new user
+title.addgroup = Add a new Group
+title.changefont = Font Change
+title.alarm = Alarm
+title.login = Logon
+title.option = Option
+title.bugreport = Report a bug
+title.reqfeature = Request a new feature
+title.loginfail = Logon failed
+title.renameuser = Rename friend's nick
+
+add.fail.overflow = Can't add a user as your user list is full.
+add.fail.exist = Existing user.
+add.fail.unknown-user = Unknown user
+add.ok = {0} was added successfully.
+add.email = E-mail address
+add.email.detail = Enter a user's e-mail address.
+
+label.loginname = User's e-mail address
+label.password = Password
+label.remember.password = Save the password on this computer
+label.initstatus = Initial status
+label.friendlyname = Friendly name
+label.sound.login = Play sound on other's logon
+label.sound.msg = Play sound on message delivery
+label.file.auto.accept = Auto Accept when incoming file request
+label.folder.download = Folder for downloaded files
+label.folder.chatlog = Folder for chat logs
+label.login.please = Please logon first!
+label.subject = Subject
+label.emoticon = Emoticon
+label.font = Font
+label.splash.clickme = Click to logon
+label.splash.onlogin = Logging on...
+label.splash.onlogout = Logging out...
+label.buddy.backimg = Choose Background Image
+label.transparent.level = Transparency Level Control
+label.fontsize = Size
+label.fontproperties = Effect
+label.fontpreview = Preview
+label.fontpreviewstring = Abc
+label.fontbold = Bold
+label.fontitalic = Italic
+label.fontunderline = Underline
+label.fontstrikethrough = Strikethrough
+label.israndomcolor = RandomColor
+label.choosefontcolor = Choose Font Color
+label.chooselistfont.color = Choose Buddylist Font Color
+label.timestamp = Display timestamp on Chat
+label.emoticon.view = Display emoticons on Chat
+label.use.fixed.font = Use fixed Font family on chat dialog
+label.inboxunread = Inbox Unread
+
+chatdlg.filesend.request.ok = Send a file request "{1}" to {0}
+chatdlg.filesend.request.fail = Can't send a file.
+chatdlg.filesend.accept = {0} accepted your request. Start transferring file.
+chatdlg.filesend.reject = {0} rejected your request.
+chatdlg.filerecv.notify = {0} is trying to send {1} file to you. If you want to accept, press (Alt+T) or (Alt+D)
+chatdlg.filerecv.reject = Rejected the file transfer request.
+chatdlg.msg.offline = {0} changed his status into OFFLINE
+chatdlg.msg.invite = Requested invitation {0}
+chatdlg.msg.top = DON'T SAY YOUR PASSWORD OR CARD NUMBER ON CHAT!\n
+chatdlg.msg.typing = {0} typing... {1}
+chatdlg.msg.notsend.offline = Can't chat when your status is 'HIDDEN'
+chatdlg.msg.transfer.4eva = The file will be transferred completely, even if you close this window.
+chatdlg.msg.whojoin = {0}, {1} joined this chat.
+chatdlg.msg.whopart = {0}, {1} parted this chat.
+chatdlg.msg.timeout = Disconnected with this user as no message was sent for {0} minutes.
+chatdlg.query.dirsend.title = Confirm a directory transfer
+chatdlg.query.dirsend.content = You are going to transfer a directory.\n Will you compress it into ZIP format?
+chatdlg.chat = {0} says:\n
+chatdlg.chat.opened = Chat session was established.
+chatdlg.chat.error = Can't deliver this message:\n{0}
+chatdlg.msg.ssclose = Session can't established for MSN server's reason.
+
+renamedlg.uname = Make Friend's NickName
+
+remdlg.query.remove.title = Remove the user
+remdlg.query.remove.content = Do you really want to remove {0}?
+remgdlg.query.remove.title = Remove the group
+remgdlg.query.remove.content = Do you really want to remove {0}?
+remgdlg.exist.title = Can't remove the group
+remgdlg.exist.content = Move this group's user to other group first
+remgdlg.gname = Group name to create
+remgdlg.query.gname = Group name to change
+
+zipdlg.msg.fail = Failed to compress: {0}
+zipdlg.msg.ready = Ready to compress a directory
+zipdlg.msg.working = Compressing...
+
+status.online = Online
+status.offline = Offline
+status.away = Away from computer
+status.brb = Be right back
+status.busy = Busy
+status.idle = Idle
+status.hidden = Hidden
+status.eat = Out to lunch
+status.phone = On the phone
+status.unknown = Unknown status
+
+menu.file = File
+menu.file.mnemonic = F
+menu.item.login = Logon...
+menu.item.logout = Logout
+menu.item.exit = Exit
+
+menu.view = View
+menu.view.mnemonic = V
+menu.item.friendview = How to display users
+menu.item.friendview.fn = By friendly names
+menu.item.friendview.ln = By e-mail addresses
+menu.item.friendview.fnln = By friendly name and e-mail address
+menu.item.friendview.my = By friendly name what I made
+menu.item.refresh = Refresh the buddy list
+menu.item.off.ignore = Hide offline users
+menu.item.alwaysontop = Always on top
+menu.item.lnf = Look and feel
+menu.item.locale = Locale
+
+menu.tool = Tools
+menu.tool.mnemonic = T
+menu.item.chstatus = Change my status
+menu.item.adduser = Add a new user...
+menu.item.renameuser = Make user's nickname
+menu.item.removeuser = Remove the user
+menu.item.addgroup = Add a new group...
+menu.item.renamegroup = Rename the group
+menu.item.removegroup = Remove the group
+menu.item.blockuser = Block the user
+menu.item.blockgroup = Block all in the group
+menu.item.unblockuser = Unblock the user 
+menu.item.unblockgroup = Unblock all in the group
+menu.item.option = Option(O)...
+menu.item.option.mnemonic = O
+
+menu.help = Help
+menu.help.mnemonic = H
+menu.item.bugreport = Report a bug
+menu.item.reqfeature = Request a new feature
+menu.item.about = About JMSN...
+
+event.login = LOGON {1} ({0})
+event.logout.1 = LOGOUT {0}
+event.logout.2 = LOGOUT {1} ({0})
+event.ring = ChatRequest {1} ({0})
+
+err.209 = Requested friendly name is not allowed on MSN.
+err.911 = Incorrect logon name or password.\nTry again.
+err.921 = Can't connect to server by too many users.
+
+label.photo.show.me = Use my photo
+label.photo.show.other = View friend's photo on chat
+label.photo.title = Select Your Photo

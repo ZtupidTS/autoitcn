@@ -1,0 +1,194 @@
+<data>	
+	<item brief="EMF" meanings="Element Mediator Function"/>
+	<item brief="NAF" meanings="Northbound Adapter Function"/>
+	<item brief="OSF" meanings="Operation System Function"/>
+	<item brief="WSF" meanings="WorkStation Function"/>
+	<item brief="MIF" meanings="Management Information Function"/>
+	<item brief="TISPAN" meanings="Telecoms and Internet converged Services and Protocol"/>
+	<item brief="SPDF" meanings="service-based policy decision function"/>
+	<item brief="CAS" meanings="Channel Associated Signaling"/>
+	<item brief="IM-MGW" meanings="IP Multimedia-MGW"/>
+	<item brief="MSC" meanings="Mobile Swich Center"/>
+	<item brief="PSTN" meanings="Public Switched Telephone Network"/>
+	<item brief="PCSCF" meanings="P-CSCF"/>
+	<item brief="SCSCF" meanings="S-CSCF"/>
+	<item brief="ICSCF" meanings="I-CSCF"/>
+	<item brief="HSS" meanings="The Home Subscriber Server"/>
+	<item brief="ENUM SERVER" meanings="E.164 Number URI Mapping"/>
+	<item brief="ISUP" meanings="Integranted Services Digital Network(ISDN) User Part"/>
+	<item brief="DUP" meanings="Data User Part"/>
+	<item brief="SCCP" meanings="Signaling Connection Control Part"/>
+	<item brief="TCAP" meanings="Transaction Capabilities Application Part"/>
+	<item brief="MAP" meanings="Mobile Application Part"/>
+	<item brief="STP" meanings="Signal Transfer Point"/>
+	<item brief="SCP" meanings="Service Control Point"/>
+	<item brief="SS7" meanings="SS7"/>
+	<item brief="GDMO" meanings="Guideline of Definition of Managed Objects"/>
+	<item brief="SIP UA" meanings="SIP User Agent"/>
+	<item brief="SIP结构" meanings="SIP协议层次"/>
+	<item brief="AOR" meanings="Address-of-Record"/>
+	<item brief="UEP" meanings="Unified Element management system Platform"/>
+	<item brief="OMM" meanings="Operation and Maintaince Module"/>
+	<item brief="EMS" meanings="Element Management System"/>
+	<item brief="SIP安全" meanings="sip安全协议"/>
+	<item brief="UDF" meanings="User Defined Functions"/>
+	<item brief="SDP" meanings="SDP"/>
+	<item brief="RTP" meanings="Realtime Transport Protocol"/>
+	<item brief="RTCP" meanings="RTP控制协议"/>
+	<item brief="HSDPA" meanings="High Speed Downlink Packet Access"/>
+	<item brief="PDP Context" meanings="PDP上下文"/>
+	<item brief="APN" meanings="Access Point Name"/>
+	<item brief="OCF" meanings="OCF"/>
+	<item brief="OCS" meanings="OCS"/>
+	<item brief="AKA" meanings="Authentication and Key Agreement"/>
+	<item brief="IAD" meanings="IAD"/>
+	<item brief="MGC" meanings="MGC"/>
+	<item brief="NNI" meanings="NNI"/>
+	<item brief="UNI" meanings="UNI"/>
+	<item brief="B2BUA" meanings="Back to Back User Agent"/>
+	<item brief="NAS" meanings="NAS"/>
+	<item brief="MG" meanings="MG"/>
+	<item brief="SOFTSWITCH" meanings="SoftSwitch"/>
+	<item brief="ETSI" meanings="European Telecommunications Standards Institute"/>
+	<item brief="CCS" meanings="Common Channel Signaling"/>
+	<item brief="IMSI" meanings="IMSI"/>
+	<item brief="GPRS" meanings="GPRS"/>
+	<item brief="MRFP" meanings="Multimedia Resource Function Processor"/>
+	<item brief="AS" meanings="Application Server"/>
+	<item brief="IM-SSF" meanings="IP Multimedia Serivce Switch Function"/>
+	<item brief="CSE" meanings="CSE"/>
+	<item brief="CAP" meanings="CAMEL Application Part"/>
+	<item brief="BGCF" meanings="Breakout Gateway Call Function"/>
+	<item brief="MGCF" meanings="Media Gateway Control Function"/>
+	<item brief="SGW" meanings="SGW"/>
+	<item brief="UMTS" meanings="Universal Mobile Telecommunications System"/>
+	<item brief="SG" meanings="SG"/>
+	<item brief="H248" meanings="Ｈ．２４８／ＭＥＧＡＣＯ"/>
+	<item brief="MEGACO" meanings="Ｈ．２４８／ＭＥＧＡＣＯ"/>
+	<item brief="MGCP" meanings="MGCP"/>
+	<item brief="TMN" meanings="Telecommunications Management Network Model"/>
+	<item brief="UAA" meanings="User-Authorization-Answer"/>
+	<item brief="SAA" meanings="Server-Assignment-Answer"/>
+	<item brief="RTA" meanings="Registration-Termination-Answer"/>
+	<item brief="UAR" meanings="User-Authorization-Request"/>
+	<item brief="RTR" meanings="Registration-Termination-Request"/>
+	<item brief="SAR" meanings="Server-Assignment-Request"/>
+	<item brief="TODOLIST" meanings="To Do List"/>
+	<item brief="LIR" meanings="Location-Info-Request"/>
+	<item brief="LIA" meanings="Location-Info-Answer"/>
+	<item brief="PPR" meanings="Push-Porfile-Request"/>
+	<item brief="PPA" meanings="Push-Profile-Answer"/>
+	<item brief="ISIM" meanings="ISIM"/>
+	<item brief="MAR" meanings="Multimedia-Auth-Request"/>
+	<item brief="MAA" meanings="Mutimedia-Auto-Answer"/>
+	<item brief="SLF" meanings="Subscription Locator Function"/>
+	<item brief="OSA" meanings="OSA"/>
+	<item brief="HSS透明数据" meanings="hss透明数据"/>
+	<item brief="UDR" meanings="User-Data-Request"/>
+	<item brief="UDA" meanings="User-Data-Answer"/>
+	<item brief="PUR" meanings="Profile-Upadate-Request"/>
+	<item brief="PUA" meanings="Profile-Update-Answer"/>
+	<item brief="SNR" meanings="Subscribe-Notification-Request"/>
+	<item brief="SNA" meanings="Subscribe-Notification-Answer"/>
+	<item brief="PNR" meanings="Push-Notification-Request"/>
+	<item brief="PNA" meanings="Push-Notification-Answer"/>
+	<item brief="ISC" meanings="International Softswitch Consortium / IMS Service Control"/>
+	<item brief="PSI" meanings="PSI"/>
+	<item brief="MRFC" meanings="Multimedia Resource Function Controller"/>
+	<item brief="COPS" meanings="Common Open Policy Service"/>
+	<item brief="PEP" meanings="PEP"/>
+	<item brief="ICID" meanings="ICID"/>
+	<item brief="IMS参考点" meanings="IMS参考点，Cx命令，Sh命令"/>
+	<item brief="IMS注册和会话建立" meanings="IMS注册和会话建立"/>
+	<item brief="NAI" meanings="Network Access Identity"/>
+	<item brief="PVI" meanings="PVI"/>
+	<item brief="PUI" meanings="PUI"/>
+	<item brief="GAA" meanings="GAA"/>
+	<item brief="GBA" meanings="GBA"/>
+	<item brief="BSF" meanings="BSF"/>
+	<item brief="PCSCF发现" meanings="P-CSCF发现"/>
+	<item brief="Cx、Sh命令" meanings="Cx、Sh命令"/>
+	<item brief="SBLP" meanings="Service Based Local Policy"/>
+	<item brief="CDR" meanings="Call Detail Record"/>
+	<item brief="SRF" meanings="Single Reserved Flow"/>
+	<item brief="业务流类别" meanings="业务流类别"/>
+	<item brief="计费相关" meanings="计费相关"/>
+	<item brief="IMS初始注册过程" meanings="IMS初始注册过程"/>
+	<item brief="FQDN" meanings="Full Qualified Domain Name"/>
+	<item brief="SA" meanings="Security Alliance / Service Area"/>
+	<item brief="SSA" meanings="SIP-Sec-Agree"/>
+	<item brief="SIP状态码" meanings="SIP状态码"/>
+	<item brief="UICC" meanings="UICC"/>
+	<item brief="IMS会话建议呼叫流程" meanings="IMS会话建议呼叫流程"/>
+	<item brief="梅特卡夫定律" meanings="梅特卡夫定律"/>
+	<item brief="SBLP承载授权" meanings="承载授权"/>
+	<item brief="SPT" meanings="Service Point Trigger"/>
+	<item brief="DTMF" meanings="DTMF"/>
+	<item brief="IOI" meanings="IOI"/>
+	<item brief="IMS会话释放流程" meanings="IMS会话释放流程"/>
+	<item brief="RAN" meanings="Radio Access Network"/>
+	<item brief="UTRAN" meanings="UMTS Terrestrial Radio Access Network"/>
+	<item brief="RNC" meanings="Radio Network Controller"/>
+	<item brief="IMEI" meanings="IMEI"/>
+	<item brief="RMI-IIOP" meanings="Remote Method Invocation over Internet Inter-ORB Protocol"/>
+	<item brief="RANAP" meanings="Radio Access Network Application Part"/>
+	<item brief="MS" meanings="Mobile Station"/>
+	<item brief="BSS" meanings="Base Station Server"/>
+	<item brief="VLR" meanings="Visitor Location Register"/>
+	<item brief="AUC" meanings="AUC"/>
+	<item brief="NSS" meanings="Network Switching System"/>
+	<item brief="EIR" meanings="Equipment Identity Register"/>
+	<item brief="IWF" meanings="InterWorking Function"/>
+	<item brief="EC" meanings="Echo Canceller"/>
+	<item brief="OMS" meanings="Operation and Maintenance System"/>
+	<item brief="SIGTRAN" meanings="Signaling Transport"/>
+	<item brief="SCTP" meanings="Stream Control Transfer Protocol"/>
+	<item brief="GTP" meanings="GPRS Tunnul Protocol"/>
+	<item brief="MCC" meanings="MCC"/>
+	<item brief="MNC" meanings="MNC"/>
+	<item brief="MSIN" meanings="MSIN"/>
+	<item brief="NMSI" meanings="NMSI"/>
+	<item brief="LAC" meanings="LAC"/>
+	<item brief="LAI" meanings="Location Area Identification"/>
+	<item brief="CGI" meanings="CGI"/>
+	<item brief="CI" meanings="CI"/>
+	<item brief="RA" meanings="Routing Area"/>
+	<item brief="RAI" meanings="Routing Area Identification"/>
+	<item brief="LA" meanings="Location Area"/>
+	<item brief="RAC" meanings="Routing Area Code"/>
+	<item brief="SAI" meanings="Service Area Identification"/>
+	<item brief="SAC" meanings="Service Area Code"/>
+	<item brief="abc" meanings="abccccc"/>
+	<item brief="MSISDN" meanings="MSISDN"/>
+	<item brief="NDC" meanings="NDC"/>
+	<item brief="MSRN" meanings="MSRN"/>
+	<item brief="HON" meanings="HON"/>
+	<item brief="TMSI" meanings="TMSI"/>
+	<item brief="TID" meanings="Tunnal Identification"/>
+	<item brief="NSAPI" meanings="Network Service Access Point Identifier"/>
+	<item brief="BVCI" meanings="BVCI"/>
+	<item brief="NSVC" meanings="NSVC"/>
+	<item brief="DLCI" meanings="DLCI"/>
+	<item brief="NSEI" meanings="NSEI"/>
+	<item brief="TLLI" meanings="TLLI"/>
+	<item brief="NOM" meanings="NOM"/>
+	<item brief="PLMN" meanings="Public Land Mobile Network"/>
+	<item brief="TEID" meanings="Tunnel Endpoint Identifier"/>
+	<item brief="ARIS" meanings="Aggregate Route-Based IP Switching"/>
+	<item brief="MPLS" meanings="Multi Protocol Label Switching"/>
+	<item brief="LSP" meanings="Label Switching Path"/>
+	<item brief="LER" meanings="Label Edge Router"/>
+	<item brief="NGN" meanings="Next Generation Network"/>
+	<item brief="CMISE" meanings="Common Management Information Service Element"/>
+	<item brief="IP-CAN" meanings="IP Connectivity Access Network"/>
+	<item brief="Parlay" meanings="Parlay"/>
+	<item brief="RSVP" meanings="Resource ReSerVation Protocol"/>
+	<item brief="ICMP" meanings="Internet Control Message Protocol"/>
+	<item brief="IGMP" meanings="Internet Group Management Protocol"/>
+	<item brief="CCF" meanings="Charging Collection Function"/>
+	<item brief="IMS-ALG" meanings="IMS Application Layer Gateway"/>
+	<item brief="SBC" meanings="SBC"/>
+	<item brief="aaa" meanings="aaa"/>
+	<item brief="xpath" meanings="xpath"/>
+	<item brief="条件覆盖" meanings="条件覆盖"/>
+</data>

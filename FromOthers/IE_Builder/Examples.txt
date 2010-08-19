@@ -1,0 +1,315 @@
+This reply will contain examples of usage of the UDF library...
+
+Click to a search page, enter criteria and submit.
+CODE
+
+#cs
+   This sample code will:
+   1) Create a new browser window
+   2) Navigate to http://www.autoitscript.com
+   3) click on the 'forum' link
+   4) click on the 'Search' link
+   5) get the object reference for the form named 'sForm'
+   6) get the object reference for the form field 'keywords' in the form 'sForm'
+   7) enter the value 'ReadyState' into the 'keywords' field
+   8) submit the form to return the search results
+#ce
+
+#include <IE.au3>
+
+$o_IE = _IECreate ()
+_IENavigate ($o_IE, "http://autoitscript.com")
+_IEClickLinkByText ($o_IE, "forum")
+_IEClickLinkByText ($o_IE, "Search")
+$o_SearchForm = _IEFormGetObjByName ($o_IE, "sForm")
+$o_Keywords = _IEFormElementGetObjByName ($o_SearchForm, "keywords")
+_IEFormElementSetValue ($o_Keywords, "ReadyState")
+_IEFormSubmit ($o_SearchForm)
+
+
+Log into Hotmail
+CODE
+#include <IE.au3>
+
+; Create a browser window and navigate to hotmail
+$oIE = _IECreate()
+_IENavigate($oIE, "http://www.hotmail.com")
+
+; get pointers to the login form and username and password fields
+$o_form = _IEFormGetObjByName($oIE, "f1")
+$o_login = _IEFormElementGetObjByName($o_form, "login")
+$o_password = _IEFormElementGetObjByName($o_form, "passwd")
+
+; Set field values and submit the form
+_IEFormElementSetValue($o_login, "your username here")
+_IEFormElementSetValue($o_password, "your password here")
+_IEFormSubmit($o_form)
+
+Exit
+
+
+Open a browser, navigate to a page with a Frameset, get a reference to the named frame 'contents' and click on a link in that frame.
+CODE
+
+#include <IE.au3>
+
+$oIE = _IECreate()
+_IENavigate($oIE, "http://www.cs.princeton.edu/~kguinee/thesis.html")
+; View Source on this page reveals 3 frames named top, contents and main
+
+$oFrame = _IEFrameGetObjByName($oIE, "contents"); get a reference to the contents frame
+_IEClickLinkByText($oFrame, "The Telephone"); click on a link in the contents frame
+
+
+Navigate to the AutoIt v3 Support forum and enter a new post (uses _IEClickImg())
+CODE
+#include <IE.au3>
+
+; Create a new browser window and navigate to a page
+$oIE = _IECreate()
+_IENavigate($oIE, "http://autoitscript.com")
+
+; Click on liks to navigate to the v3 Support forum
+_IEClickLinkByText($oIE, "forum")
+_IEClickLinkByText($oIE, "v3 Support")
+
+; Click on the NewTopic button
+_IEClickImg($oIE, "Start new topic", "alt")
+
+; Find the form and the form fields we are interested in
+$o_form     = _IEFormGetObjByName($oIE, "REPLIER")
+$o_title     = _IEFormElementGetObjByName($o_form, "TopicTitle")
+$o_desc     = _IEFormElementGetObjByName($o_form, "TopicDesc")
+$o_message     = _IEFormElementGetObjByName($o_form, "Post")
+
+; Set the value of the form fields
+_IEFormElementSetValue($o_title, "Test using the IE Automation UDF Library")
+_IEFormElementSetValue($o_desc, "I'm a knucklehead...")
+_IEFormElementSetValue($o_message, "I didn't mean to Submit this!")
+
+; The next line would submit the form -- but don't do it unless you want to be a knucklehead :-)
+;;;;_IEFormSubmit($o_form)
+
+Exit
+
+
+This example demonstrates how to use the fireEvent() method to trigger an event associated with an object. In this case, dhtmlcentral uses a JavaScript menu for navigation of the site. When you "mouseOver" one of the top level menu items (each defined in a <div> tag), a submenu drops down. This script performs a virtual "mouseOver" on each of the top level menu items, then clicks on one of the submenu items.
+
+CODE
+#include <IE.au3>
+
+$oIE = _IECreate(); Create a new browser window
+_IENavigate($oIE, "http://www.dhtmlcentral.com")
+
+$divs = _IETagNameGetCollection ($oIE.document, "div")
+
+$divs.item("oM_m1").fireEvent("onMouseOver")
+Sleep(600)
+$divs.item("oM_m2").fireEvent("onMouseOver")
+Sleep(600)
+$divs.item("oM_m3").fireEvent("onMouseOver")
+Sleep(600)
+$divs.item("oM_m4").fireEvent("onMouseOver")
+Sleep(600)
+$divs.item("oM_m5").fireEvent("onMouseOver")
+Sleep(600)
+$divs.item("oM_m6").fireEvent("onMouseOver")
+Sleep(600)
+$divs.item("oM_m7").fireEvent("onMouseOver")
+Sleep(600)
+$divs.item("oM_m1").fireEvent("onMouseOver")
+Sleep(600)
+$divs.item("oM_m9").fireEvent("onMouseOver")
+Sleep(600)
+$divs.item("oM_m9").click
+
+
+This example opens the AutoIt forum search page and toggles the sortby radiobuttons. An identical technique can be used with checkboxes.
+CODE
+#include <IE.au3>
+
+$oIE = _IECreate()
+_IENavigate($oIE, "http://www.autoitscript.com/forum/index.php?act=Search&f=")
+
+$oFrom = _IEFormGetObjByName($oIE, "sForm")
+$oRelevant = _IEFormElementGetObjByName($oFrom, "sortby", 0)
+$oRecent = _IEFormElementGetObjByName($oFrom, "sortby", 1)
+
+For $i = 1 to 5
+    $oRelevant.checked = True
+    Sleep(1000)
+    $oRecent.checked = True
+    Sleep(1000)
+Next
+
+
+This example creates a browser window, navigates to Google, sets the search string value and performs a search.
+
+By looking at the HTML source on the Google page, you'll find that the form on the page has a name of "f" and the query text box has a name of "q" (this will of course be different on differnt web pages, so you need to look at the source). These names are used to create references to the form and the field in the form so that we can act upon them.
+
+The _IELoadWait at the end is optional and causes the script to wait for the page to be fully loaded before moving to the next line. Many of the IE.au3 functions can perform this wait automatically, but the _IEFormSubmit cannot.
+CODE
+#include <IE.au3>
+
+$oIE = _IECreate()
+_IENavigate($oIE, "http://www.google.com")
+
+$oForm = _IEFormGetObjByName($oIE, "f")
+$oQuery = _IEFormElementGetObjByName($oForm, "q")
+
+_IEFormElementSetValue($oQuery, "place your search string here")
+_IEFormSubmit($oForm)
+_IELoadWait($oIE)
+
+Exit
+
+
+Here is the same Google example, but this submits the form by performing a .click event on the "Google Search" button instead of usng the _IEFormSubmit function:
+CODE
+#include <IE.au3>
+
+$oIE = _IECreate()
+_IENavigate($oIE, "http://www.google.com")
+
+$oForm = _IEFormGetObjByName($oIE, "f")
+$oQuery = _IEFormElementGetObjByName($oForm, "q")
+$oButton = _IEFormElementGetObjByName($oForm, "btnG")
+
+_IEFormElementSetValue($oQuery, "place your search string here")
+$oButton.click
+_IELoadWait($oIE)
+
+Exit
+
+
+Here is the same Google example, but this submits the form by giving focus to the "Google Search" button and sending an "Enter" from the keyboard instead of usng the _IEFormSubmit function. Thanks for this go to AutoItPimp who discovered the need for this and found the work-around because the button that he was clicking put up a modal dialog box that would not yield control back to AutoIt until it had been manually dismissed. This allowed him to click the button and give control back in his script so that he could use AutoIt to manipulate the dialog box even though processing in the webpage was suspended.
+CODE
+#include <IE.au3>
+
+$oIE = _IECreate()
+_IENavigate($oIE, "http://www.google.com")
+
+$oForm = _IEFormGetObjByName($oIE, "f")
+$oQuery = _IEFormElementGetObjByName($oForm, "q")
+$oButton = _IEFormElementGetObjByName($oForm, "btnG")
+
+_IEFormElementSetValue($oQuery, "place your search string here")
+$oButton.focus()
+Send("{Enter}")
+_IELoadWait($oIE)
+
+Exit
+
+
+Use _IETableWriteToArray to read the contents of an HTML table into an array.
+CODE
+#include <IE.au3>; Include the UDF
+
+; Create an IE Browser
+;
+$oIE = _IECreate()
+
+; Navigate to your URL
+;
+_IENavigate($oIE, "http://pda.hko.gov.hk/wxreporte.htm")
+
+; Get a reference to the Second table on the webpage (where the detail is stored)
+;     note that object indexes are 0-based, so the second table is index 1
+;
+$oTable2 = _IETableGetObjByIndex($oIE, 1)
+
+; Read the table cells into a 2-D array
+;
+$aWeather = _IETableWriteToArray($oTable2)
+
+; Write the array contents out to the console
+;
+For $i = 0 to Ubound($aWeather, 2) - 1
+    ConsoleWrite("City: " & $aWeather[0][$i] & " --> Temp: " & $aWeather[1][$i] & @CR)
+Next
+
+Exit
+
+------------------------------------------------------------
+It creates output like this:
+
+City: KING'S PARK --> Temp: 28 DEGREES;
+City: WONG CHUK HANG --> Temp: 29 DEGREES;
+City: TA KWU LING --> Temp: 29 DEGREES;
+City: LAU FAU SHAN --> Temp: 28 DEGREES;
+City: TAI PO --> Temp: 29 DEGREES;
+City: SHA TIN --> Temp: 29 DEGREES;
+City: TUEN MUN --> Temp: 29 DEGREES;
+City: TSEUNG KWAN O --> Temp: 28 DEGREES;
+City: SAI KUNG --> Temp: 29 DEGREES;
+City: CHEUNG CHAU --> Temp: 28 DEGREES;
+City: CHEK LAP KOK --> Temp: 30 DEGREES;
+City: TSING YI --> Temp: 29 DEGREES;
+City: SHEK KONG --> Temp: 29 DEGREES .
+
+
+Read the contents of the body of a webpage and search for a string. If the string is found, replace it with a new string and write it back to the webpage.
+CODE
+#include <IE.au3>
+
+$oIE = _IECreate()
+_IENavigate($oIE, "http://www.autoitscript.com/")
+
+$body = _IEBodyReadHTML($oIE)
+
+If StringInStr($body, "automation") Then
+    MsgBox(0, "Success", "The string was found")
+    $newbody = StringReplace($body, "automation", "AUTOMATION - Yeah!")
+    _IEBodyWriteHTML($oIE, $newbody)
+Else
+    MsgBox(0, "Fail", "The string was NOT found")
+EndIf
+
+Exit
+
+
+This example demonstrates how to set a form element value for a Select, Option field and then fire the OnChange event that triggers a Javascript. Here's source from a webpage that demonstrates this:
+
+CODE
+<select name="Region" size="10" onChange="PopulateSecondPane(this.form, this.form.Region.options[this.form.Region.selectedIndex].value);" ID="Select1">
+
+
+The values in a second Select, Option field change based on the OnChange event getting fired by the first one. Changing the value via script doesn't trigger the event, but fortunately this is pretty easy to do using the .fireEvent method. This example sets the value of the Region field to North America (i.e. 11) and then fires the OnChange event for the field which triggers the Javascript that updates the second field. This example also demonstrates a simple method of attaching to an existing browser already pointed to the desired site if it exists and creating a new one if not.
+CODE
+#include <IE.au3>
+
+$sUrl = "http://creative.com/language.asp?sDestUrl=/support/downloads"
+
+$oIE = _IEAttach($sUrl, "url")
+If not isObj($oIE) Then
+    $oIE = _IECreate()
+    _IENavigate($oIE, $sUrl)
+EndIf
+
+$oForm = _IEFormGetObjByName($oIE, "Form1")
+$oRegion = _IEFormElementGetObjByName($oForm, "Region")
+_IEFormElementSetValue($oRegion, "11")
+$oRegion.fireEvent("OnChange")
+
+
+This example creates a browser window, navigates to a webpage and downloads all images to a local folder using the source image name.
+
+CODE
+#include <IE.au3>
+
+$sImgDir = "c:\foo\"; Please make certain this folder already exists (silent failure if not)
+$sWebPage = "http://www.autoitscript.com/forum/index.php?"; webpage with images
+
+$oIE = _IECreate()
+_IENavigate($oIE, $sWebPage)
+$oIMGs = _IETagNameGetCollection($oIE.document, "img")
+
+; Loop through all IMG tags and save file to local directory using INetGet
+For $oIMG in $oIMGs
+    $sImgUrl = $oIMG.src
+    $sImgFileName = $oIMG.nameProp
+    INetGet($sImgUrl,  $sImgDir & $sImgFileName)
+Next
+
+
+You can find more about the attributes of the IMG tag at MSDN

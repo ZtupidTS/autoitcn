@@ -1,0 +1,164 @@
+file.transfer.complete = Transfer termine &quot;{0}&quot;
+who.added.me = Vous avez ajoute par {0}.
+add.approve = Accepter et ajouter cet utilisateur.
+add.reject = Rejeter et bloquer cet utilisateur.
+
+button.add = Ajouter
+button.ok = OK
+button.close = Fermer
+button.cancel = Annuler
+button.find = Parcourir
+button.file.send = Envoyer
+button.submit = Soumettre(S)
+
+checkbox.use = Utilisateurs
+
+title.adduser = Ajouter
+title.addgroup = Ajouter un nouveau groupe
+title.changefont = Changer les Fontes
+title.alarm = Alarme
+title.login = Login
+title.option = Options
+title.bugreport = Rapport de bug
+title.reqfeature = Demander une nouvelle fonction
+title.loginfail = Login impossible
+title.renameuser = Rename friend's nick
+
+add.fail.overflow = Votre liste d'utilisateurs est pleine.
+add.fail.exist = Utilisateur deja existant.
+add.fail.unknown-user = Utilisateur inconnu
+add.ok = {0} a ete ajoute
+add.email = E-mail addresse
+add.email.detail = Entrer l'adresse Email d'un utilisateur.
+
+label.loginname = Adresse Email
+label.password = Mot de Passe
+label.remember.password = Sauver le mot de passe
+label.initstatus = Statut initial
+label.friendlyname = Nick
+label.sound.login = Jouer un son a l'arrive d'un utilisateurs
+label.sound.msg = Jouer un son a l'arrive d'un message
+label.folder.download = Repertoire de telechargement
+label.folder.chatlog = Repertoire log des conversations
+label.login.please = S.V.P. connectez vous avant!
+label.subject = Sujet
+label.emoticon = Emoticon
+label.font = Fontes
+label.splash.clickme = Cliquez pour vous connecter
+label.splash.onlogin = Connexion en cours...
+label.splash.onlogout = Deconnexion en cours...
+label.buddy.backimg = Choisir une image de fond
+label.transparent.level = Controle de la transparence
+label.fontsize = Taille
+label.fontproperties = Effet
+label.fontpreview = Present
+label.fontpreviewstring = Abc
+label.fontbold = Gras
+label.fontitalic = Italique
+label.fontunderline = Souligne
+label.fontstrikethrough = Barre
+label.israndomcolor = Couleur aleatoire
+label.choosefontcolor = Choisir couleur fontes
+label.chooselistfont.color = Choisir couleur liste utilisateurs
+label.timestamp = Afficher l'heure dans les conversations
+label.emoticon.view = Afficher les emoticons dans les conversations
+label.inboxunread = Message non lus
+
+chatdlg.filesend.request.ok = Demande d'envoi du fichier &quot;{1}&quot; a {0}
+chatdlg.filesend.request.fail = Je ne peux pas envoyer le fichier.
+chatdlg.filesend.accept = {0} Demande acceptee. Transfert commence
+chatdlg.filesend.reject = {0} Demande refusee.
+chatdlg.filerecv.notify = {0} essaie de vous envoyer le fichier {1}. Tapez (Alt+T) ou (Alt+D) pour accepter.
+chatdlg.filerecv.reject = Vous avez bien refuse la demande.
+chatdlg.msg.offline = {0} change son status en 'HORS LIGNE'
+chatdlg.msg.invite = Invitation envoye {0}
+chatdlg.msg.top = PAS DE MOT DE PASSE OU N¡ÆCARTE CREDIT EN CHAT!\n
+chatdlg.msg.typing = {0} ecrit... {1}
+chatdlg.msg.notsend.offline = Vous ne pouvez pas parler quand votre status est 'CACHE'
+chatdlg.msg.transfer.4eva = Le fichier sera transfere completement meme si vous fermez cette fenetre.
+chatdlg.msg.whojoin = {0}, {1} rejoint la conference.
+chatdlg.msg.whopart = {0}, {1} part de la conference.
+chatdlg.msg.timeout = Deconnection de cet utilisateur, pas de message depuis {0} minutes.
+chatdlg.query.dirsend.title = Confirmer transfert de repertoire
+chatdlg.query.dirsend.content = Vous allez transferer un repertoire.\n Voulez vous le compresser en zip ?
+chatdlg.chat = {0} dit:\n
+chatdlg.chat.opened = La session chat n'a pas ete etablie.
+chatdlg.chat.error = Je ne peux pas envoyer ce message:\n{0}
+chatdlg.msg.ssclose = Session non etablie, probleme serveur MSN.
+
+renamedlg.uname = Make Friend's NickName
+
+remdlg.query.remove.title = Enlever l'utilisateur
+remdlg.query.remove.content = Voulez-vous vraimentenlever {0}?
+remgdlg.query.remove.title = Enlever le groupe
+remgdlg.query.remove.content = Voulez vous vraimentenlever {0}?
+remgdlg.exist.title = Je ne peux pas enlever ce groupe
+remgdlg.exist.content = enlevez tous les utilisateursavant.
+remgdlg.gname = Nom du groupe a creer
+remgdlg.query.gname = Nom du groupe a changer
+
+zipdlg.msg.fail = Impossible de compresser: {0}
+zipdlg.msg.ready = Pret pour compresser le repertoire
+zipdlg.msg.working = Compression...
+
+status.online = En Ligne
+status.offline = Hors Ligne
+status.away = Loin de l'ordinateur
+status.brb = Revient bientot
+status.busy = Occup
+status.idle = Ne repond pas
+status.hidden = Cache
+status.eat = Partit manger
+status.phone = Au telephone
+status.unknown = Status inconnu
+
+menu.file = Fichier
+menu.file.mnemonic = F
+menu.item.login = Connection...
+menu.item.logout = Deconnexions
+menu.item.exit = Quitter
+
+menu.view = Voir
+menu.view.mnemonic = V
+menu.item.friendview = Affichage des utilisateurs
+menu.item.friendview.fn = Par pseudonyme
+menu.item.friendview.ln = Par adresse e-mail
+menu.item.friendview.fnln = Par pseudonyme et adresse e-mail
+menu.item.friendview.my = By friendly name what I made
+menu.item.refresh = Rafraichir la liste
+menu.item.off.ignore = Cacher les utilisateurs Hors Ligne
+menu.item.alwaysontop = Toujours visible
+menu.item.lnf = Apparence
+menu.item.locale = Language
+
+menu.tool = Outils
+menu.tool.mnemonic = T
+menu.item.chstatus = Changer mon statut
+menu.item.adduser = Ajouter un nouvel utilisateur...
+menu.item.renameuser = Make user's nickname
+menu.item.removeuser = Enlever l'utilisateur
+menu.item.addgroup = Ajouter un nouveau groupe...
+menu.item.renamegroup = Renommer le groupe
+menu.item.removegroup = Supprimer le groupe
+menu.item.option = Option(O)...
+menu.item.option.mnemonic = O
+
+menu.help = Aide
+menu.help.mnemonic = H
+menu.item.bugreport = Rapporter un bug
+menu.item.reqfeature = Demander une nouvelle fonctionnalite
+menu.item.about = A propos de JMSN...
+
+event.login = LOGON {1} ({0})
+event.logout.1 = LOGOUT {0}
+event.logout.2 = LOGOUT {1} ({0})
+event.ring = Demande de conversation {1} ({0})
+
+err.209 = Demander un pseudonyme n'est pas autorise surMSN.
+err.911 = Login ou mot de passe incorrect.\nReessayez.
+err.921 = Impossible de se connecter, trop d'utilisateurs. 
+
+label.photo.show.me = Use my photo
+label.photo.show.other = View friend's photo on chat
+label.photo.title = Select Your Photo
+

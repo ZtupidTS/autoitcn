@@ -1,0 +1,1 @@
+MsgBox(0, "tn", "running tn, args: " & $CmdLine[1] & " " & $CmdLine[2] & " " & $CmdLine[3])

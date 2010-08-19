@@ -1,0 +1,170 @@
+# $Id: message.properties.ko_KR,v 1.21 2004/08/04 07:05:49 xrath Exp $
+file.transfer.complete = "{0}"의 전송이 완료되었습니다.
+who.added.me = {0}님이 당신을 대화목록에 추가했습니다.
+add.approve = 이 사용자를 대화목록에 추가하고, 허용합니다.
+add.reject = 이 사용자를 대화목록에 추가하지 않고, 차단합니다.
+
+button.add = 추가(A)
+button.ok = 확인
+button.close = 닫기
+button.cancel = 취소
+button.find = 찾아보기
+button.file.send = 파일보내기
+button.submit = 보내기(S)
+
+checkbox.use = 사용
+
+title.adduser = 새로운 친구를 등록합니다
+title.addgroup = 새로운 그룹을 등록합니다
+title.changefont = 글꼴을 변경합니다.
+title.alarm = 알림
+title.login = 로그온을 합니다.
+title.option = 옵션
+title.bugreport = 찾아낸 버그를 신고합니다
+title.reqfeature = 새로운 기능을 요청합니다
+title.loginfail = 로그온 실패
+title.renameuser = 내맘대로 친구 이름짓기
+
+add.fail.overflow = 친구목록의 한도 크기를 넘어 등록할 수 없습니다.
+add.fail.exist = 이미 등록되어 있는 사용자입니다.
+add.fail.unknown-user = MSN에 등록되어 있지 않은 사용자 이름입니다.
+add.ok = {0}님을 성공적으로 추가하였습니다.
+add.email = 등록할 사용자의 메일 주소
+add.email.detail = 친구로 등록할 사용자의 메일주소를 입력하세요
+
+label.loginname = 사용자 메일주소
+label.password = 비밀번호
+label.remember.password = 이 컴퓨터에 비밀번호 저장
+label.initstatus = 접속 초기상태
+label.friendlyname = 표시 대화명
+label.sound.login = 친구 로그온시 효과음 연주
+label.sound.msg = 메시지 도착시 효과음 연주
+label.file.auto.accept = 파일 자동 수신
+label.folder.download = 받은 파일을 저장할 폴더
+label.folder.chatlog = 친구들과의 대화내용을 보관할 폴더
+label.login.please = 로그온을 하세요
+label.subject = 제 목
+label.emoticon = 이모티콘
+label.font = 글꼴
+label.splash.clickme = 로그온을 하려면 클릭하세요
+label.splash.onlogin = 로그온 하는 중...
+label.splash.onlogout = 로그아웃 하는 중...
+label.buddy.backimg = 배경 이미지 선택
+label.transparent.level = 창 투명도 조절
+label.fontsize = 크기
+label.fontproperties = 효과
+label.fontpreview = 미리보기
+label.fontpreviewstring = 가나다 Abc
+label.fontbold = 굵게
+label.fontitalic = 기울임꼴
+label.fontunderline = 밑줄
+label.fontstrikethrough = 취소선
+label.israndomcolor = 임의색상
+label.choosefontcolor = 글자색을 선택하세요
+label.chooselistfont.color = 친구목록에서 글자색 변경
+label.timestamp = 대화중 각 메시지에 시간 표시
+label.emoticon.view = 대화중 이모티콘 표시하기
+label.use.fixed.font = 상대방 글꼴을 내것과 같게 고정
+label.inboxunread = 새로온 편지
+
+chatdlg.filesend.request.ok = {0}님에게 파일 "{1}" 보내기를 요청하였습니다.
+chatdlg.filesend.request.fail = 파일을 보낼 수 없습니다.
+chatdlg.filesend.accept = {0}님이 파일수신을 허락하였습니다. 파일을 보내기 시작합니다.
+chatdlg.filesend.reject = {0}님이 파일수신을 거절하였습니다.
+chatdlg.filerecv.notify = {0}님이 파일 {1}을 보내려고 합니다.\n파일을 받으시려면 (Alt+T)를 누르시고 거절하시려면 (Alt+D)를 누르세요
+chatdlg.filerecv.reject = 파일 수신을 거절하였습니다.
+chatdlg.msg.offline = {0}님이 오프라인 상태로 변경되었습니다.
+chatdlg.msg.invite = {0}을 초대요청하였습니다.
+chatdlg.msg.top = 대화중에 카드번호나 비밀번호를 알려주지 마세용\n
+chatdlg.msg.typing = {0}님이 메시지를 입력중({1})
+chatdlg.msg.notsend.offline = '오프라인으로 표시'에서는 메시지를 보낼 수 없습니다.
+chatdlg.msg.transfer곳.4eva = 전송되던 파일은 창을 닫아도 끝까지 전송될 입니다.
+chatdlg.msg.whojoin = {0}, {1}님이 대화에 참여하였습니다.
+chatdlg.msg.whopart = {0}, {1}님이 나가셨습니다.
+chatdlg.msg.timeout = {0}분 동안 아무런 메시지가 없었으므로 연결이 끊어졌습니다.
+chatdlg.query.dirsend.title = 디렉토리 전송 확인
+chatdlg.query.dirsend.content = 전송하려는 파일({0})이 디렉토리입니다. ZIP으로 압축하여 보내시겠습니까?
+chatdlg.chat = {0}님의 말:\n
+chatdlg.chat.opened = 대화 세션이 연결되었습니다.
+chatdlg.chat.error = 다음 메시지를 전달하지 못하였습니다: \n{0}
+chatdlg.msg.ssclose = MSN 서버 문제로 대화 세션을 연결하지 못했습니다. 창을 닫고 재시도 해보십시오.
+
+renamedlg.uname = 친구이름
+
+remdlg.query.remove.title = 친구 삭제
+remdlg.query.remove.content = {0}님을 정말로 삭제하시겠습니까?
+remgdlg.query.remove.title = 그룹 삭제
+remgdlg.query.remove.content = 그룹({0})을 정말로 삭제하시겠습니까?
+remgdlg.exist.title = 그룹을 지울 수 없습니다
+remgdlg.exist.content = 이 그룹에 있는 사용자를 다른 그룹으로 모두 이동한 뒤 삭제하세요
+remgdlg.gname = 새로 만들 그룹 이름
+remgdlg.query.gname = 변경할 그룹 이름
+
+zipdlg.msg.fail = 압축을 실패하였습니다: {0}
+zipdlg.msg.ready = 디렉터리 압축을 준비하고 있습니다.
+zipdlg.msg.working = 압축을 하는 중입니다.
+
+status.online = 온라인
+status.offline = 오프라인
+status.away = 자리비움
+status.brb = 곧 돌아오겠음
+status.busy = 다른 용무중
+status.idle = 자동 자리비움
+status.hidden = 오프라인으로 표시
+status.eat = 밥먹는중
+status.phone = 통화중
+status.unknown = 알수없는 상태
+
+menu.file = 파일(F)
+menu.file.mnemonic = F
+menu.item.login = 로그온...
+menu.item.logout = 로그아웃
+menu.item.exit = 종료
+
+menu.view = 보기(V)
+menu.view.mnemonic = V
+menu.item.friendview = 친구 표시
+menu.item.friendview.fn = 친숙한 이름으로
+menu.item.friendview.ln = 메일 주소로
+menu.item.friendview.fnln = 친숙한 이름과 메일주소로
+menu.item.friendview.my = 내가 지정한 이름으로
+menu.item.refresh = 친구목록 새로고침
+menu.item.off.ignore = 오프라인 사용자 안보기
+menu.item.alwaysontop = 언제나 맨 위로
+menu.item.lnf = 룩앤필
+menu.item.locale = 언어
+
+menu.tool = 도구(T)
+menu.tool.mnemonic = T
+menu.item.chstatus = 내 상태 변경
+menu.item.adduser = 친구 추가하기...
+menu.item.renameuser = 친구 이름짓기
+menu.item.removeuser = 친구 삭제
+menu.item.addgroup = 그룹 추가하기..
+menu.item.renamegroup = 그룹명 변경
+menu.item.removegroup = 그룹 삭제
+menu.item.blockuser = 친구 차단하기
+menu.item.unblockuser = 친구 차단해제
+menu.item.blockgroup = 그룹원 모두 차단
+menu.item.unblockgroup = 그룹원 모두 차단해제
+menu.item.option = 옵션(O)...
+menu.item.option.mnemonic = O
+
+menu.help = 도움(H)
+menu.help.mnemonic = H
+menu.item.bugreport = 버그신고하기
+menu.item.reqfeature = 기능추가요청
+menu.item.about = JMSN에 대하여...
+
+event.login = 로그온 {1} ({0})
+event.logout.1 = 로그아웃 {0}
+event.logout.2 = 로그아웃 {1} ({0})
+event.ring = 대화요청 {1} ({0})
+
+err.209 = 요청하신 이름은 MSN에서 사용할 수 없는 이름입니다.
+err.911 = 로그온 이름이 잘못되었거나, 비밀번호가 맞지 않습니다.\n로그온 이름과 비밀번호를 확인하신 후, 다시 시도해주세요.
+err.921 = 사용자가 너무 많아 서버에 접속할 수 없습니다.
+
+label.photo.show.me = 대화창에 내 사진 공개
+label.photo.show.other = 대화창에 다른 사람의 공개사진 표시
+label.photo.title = 공개사진 선택

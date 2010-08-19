@@ -1,0 +1,13 @@
+<head>
+	<title>SA</title>
+</head>
+<body>
+<h2>Security Alliance: UE与PCSCF之间的安全联盟</h2>
+<ul>
+<li><font style="BACKGROUND-COLOR: #c7edcc" face=SimSun size=3>首次注册时SA的建立<br />这组SA的建立需要使用共享的密钥。然而，PCSCF对注册UE的ISIM应用与对数网络的HSS之间所共享的安全参数一无所知，因此SCSCF在401响应中使用的消息头将IK和CK发给PCSCF，PCSCF在将401响应发给UE之前，必须将个两个密钥从消息头中去掉并保存在本地，之后PCSCF就使用IK作为这组SA所需的共享密钥。Gm口另一侧的UE通过401响应中接收到的挑战来计算IK，并将其作为共享密钥。UE发送200(OK)给SCSCF后，PCSCF和UE同时使用这组SA。SA建立成功。<br /><br /></font>
+<li><font style="BACKGROUND-COLOR: #c7edcc"><font face=SimSun size=3>重认证情况下多组SA的处理<br />一组SA的建立都是开始与SCSCF的401响应的，并基于401消息中的参数。重新注册成功后，UE和PCSCF会同时维护2套SA：旧SA和新SA，PCSCF会同时维护这2套SA，因为：PCSCF无法确认对第二个REGISTER请求的200(OK)响应已经被UE收到（<u>SIP对除了INVITE消息外，不对任何其它请求的响应作任何确认机制</u>）。如果SA无法收到第二个REGISTER的200(OK)响应，则UE无法使用新SA，这时PCSCF就必须使用旧SA。PCSCF必须等待UE使用新的SA发来一个请求，才能开始使用新的SA。但是，PCSCF在收到UE使用新SA发送了一个请求后，还不能立刻废弃旧SA，因为UE可能已经通过旧SA发送了一个请求，但是对端还没有进行响应，因此，旧SA必须继续保留大概128秒后才能彻底废弃。在收到使用新SA发送请求给PCSCF之前，PCSCF必须保留2组SA直到他们超时。<br />一个SA建立起来后，UE应该马上使用新的SA，丢弃旧SA，因此，对于UE来说，它永远不需要同时维护2套SA<br /></font></font></li></ul><font style="BACKGROUND-COLOR: #c7edcc">
+<hr width="100%" color=#696969 SIZE=1 />
+</font>
+<h2>Service Area: 服务区<br /></h2>
+</body>
+</html>

@@ -1,0 +1,1 @@
+ConsoleWrite(TimerInit() & @CRLF)

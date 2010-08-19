@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<root>
+	<child>
+		<testChild name="test child 1" instance="1">
+			<ffffffffffffff ff="fff"/>
+		</testChild>
+		<testChild name="modified" instance="2">
+			<ffffffffffffff ff="fff"/>
+		</testChild>
+	</child>
+</root>

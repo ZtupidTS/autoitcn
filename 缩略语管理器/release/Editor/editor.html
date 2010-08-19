@@ -1,0 +1,30 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>Editor</title>
+</head>
+<body>
+<form name="edit_area" method="post" onsubmit="javascript:KindSubmit();">
+<input type="hidden" name="source_code" value="">
+<input type="hidden" name="save_button" value="Save" onclick="javascript:KindSubmit();">
+<input type="hidden" name="content" value=
+'条件覆'
+>
+<script type="text/javascript" src="./KindEditor.js"></script>
+<script type="text/javascript">
+var editor = new KindEditor("editor");
+editor.hiddenName = "content";
+editor.skinPath = "./skins/fck/";
+editor.iconPath = "./icons/";
+editor.cssPath = "./common.css";
+editor.editorWidth = "840px";
+editor.editorHeight = "530px";
+editor.show();
+function KindSubmit() {
+	editor.data();
+}
+</script>
+</form>
+</body>
+</html>

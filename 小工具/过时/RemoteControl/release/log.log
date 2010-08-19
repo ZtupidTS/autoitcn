@@ -1,0 +1,61 @@
+2008-05-05 18:59:05 : RCServer.exe: IM发送响应成功！
+2008-05-05 19:01:04 : RCServer.exe: 命令行【E:\AutoItWork\RemoteControl\release\utils\echo.exe ""】
+
+2008-05-05 19:05:26 : RCServer.exe: 命令行【E:\AutoItWork\RemoteControl\release\utils\echo.exe ""】
+2008-05-05 19:05:27 : echo.exe: 即将发送文件：【E:\AutoItWork\RemoteControl\release\utils\tmp\107153870379878.txt】中的内容。
+2008-05-05 19:06:28 : email2.exe: Notes未启动或者无法新建邮件。
+2008-05-05 19:09:15 : RCServer.exe: 命令行【E:\AutoItWork\RemoteControl\release\utils\echo.exe ""】
+2008-05-05 19:09:16 : echo.exe: 即将发送文件：【E:\AutoItWork\RemoteControl\release\utils\tmp\107840903667068.txt】中的内容。
+2008-05-05 19:09:16 : echo.exe: E:\AutoItWork\RemoteControl\release\utils\email2.exe "oicqcx@hotmail.com" "" "echo.exe report, E:\AutoItWork\RemoteControl\release\utils\echo.exe """ "E:\AutoItWork\RemoteControl\release\utils\tmp\107840903667068.txt"
+2008-05-05 19:10:17 : email2.exe: Notes未启动或者无法新建邮件。
+2008-05-05 19:14:48 : RCServer.exe: 命令行【E:\AutoItWork\RemoteControl\release\utils\echo.exe ""】
+2008-05-05 19:14:48 : echo.exe: 即将发送文件：【E:\AutoItWork\RemoteControl\release\utils\tmp\108838205308260.txt】中的内容。
+2008-05-05 19:14:48 : echo.exe: E:\AutoItWork\RemoteControl\release\utils\email2.exe "oicqcx@hotmail.com" "" "echo.exe report, E:\AutoItWork\RemoteControl\release\utils\echo.exe ''" "E:\AutoItWork\RemoteControl\release\utils\tmp\108838205308260.txt"
+2008-05-05 19:15:28 : RCServer.exe: 命令行【E:\AutoItWork\RemoteControl\release\utils\echo.exe ""】
+2008-05-05 19:15:28 : echo.exe: 即将发送文件：【E:\AutoItWork\RemoteControl\release\utils\tmp\108958160659523.txt】中的内容。
+2008-05-05 19:15:28 : echo.exe: E:\AutoItWork\RemoteControl\release\utils\email2.exe "oicqcx@hotmail.com" "" "echo.exe report, E:\AutoItWork\RemoteControl\release\utils\echo.exe ''" "E:\AutoItWork\RemoteControl\release\utils\tmp\108958160659523.txt"
+2008-05-05 19:15:51 : email2.exe: Error code:2  Rc:与服务器的传输连接失败。
+2008-05-05 19:16:15 : email2.exe: Error code:2  Rc:与服务器的传输连接失败。
+2008-05-05 19:20:12 : RCServer.exe: 命令行【E:\AutoItWork\RemoteControl\release\utils\echo.exe ""】
+2008-05-05 19:20:12 : echo.exe: 即将发送文件：【E:\AutoItWork\RemoteControl\release\utils\tmp\109809815496495.txt】中的内容。
+2008-05-05 19:20:12 : echo.exe: E:\AutoItWork\RemoteControl\release\utils\email.exe "oicqcx@hotmail.com" "" "echo.exe report, E:\AutoItWork\RemoteControl\release\utils\echo.exe ''" "E:\AutoItWork\RemoteControl\release\utils\tmp\109809815496495.txt"
+2008-05-05 19:21:16 : email.exe: Notes未启动或者无法新建邮件。
+2008-05-05 19:23:52 : RCServer.exe: 命令行【E:\AutoItWork\RemoteControl\release\utils\echo.exe ""】
+2008-05-05 19:23:53 : echo.exe: 即将发送文件：【E:\AutoItWork\RemoteControl\release\utils\tmp\110472027555848.txt】中的内容。
+2008-05-05 19:23:53 : echo.exe: E:\AutoItWork\RemoteControl\release\utils\email.exe "oicqcx@hotmail.com" "" "echo.exe report, E:\AutoItWork\RemoteControl\release\utils\echo.exe ''" "E:\AutoItWork\RemoteControl\release\utils\tmp\110472027555848.txt"
+2008-05-05 19:40:24 : RCServer.exe: 命令行【E:\AutoItWork\RemoteControl\release\utils\echo.exe ""】
+2008-05-05 19:40:25 : echo.exe: 即将发送文件：【E:\AutoItWork\RemoteControl\release\utils\tmp\113448299250218.txt】中的内容。
+2008-05-05 19:40:25 : echo.exe: E:\AutoItWork\RemoteControl\release\utils\email.exe "oicqcx@hotmail.com" "" "echo.exe report, E:\AutoItWork\RemoteControl\release\utils\echo.exe ''" "E:\AutoItWork\RemoteControl\release\utils\tmp\113448299250218.txt"
+2008-05-05 19:42:08 : RCServer.exe: 命令行【E:\AutoItWork\RemoteControl\release\utils\echo.exe ""】
+2008-05-05 19:42:09 : echo.exe: 即将发送文件：【E:\AutoItWork\RemoteControl\release\utils\tmp\113761441560855.txt】中的内容。
+2008-05-05 19:42:09 : echo.exe: E:\AutoItWork\RemoteControl\release\utils\email.exe "oicqcx@hotmail.com" "" "echo.exe report, E:\AutoItWork\RemoteControl\release\utils\echo.exe ''" "E:\AutoItWork\RemoteControl\release\utils\tmp\113761441560855.txt"
+2008-05-05 19:43:09 : email.exe: Notes未启动或者无法新建邮件。
+2008-05-05 19:44:46 : RCServer.exe: 命令行【E:\AutoItWork\RemoteControl\release\utils\echo.exe ""】
+2008-05-05 19:44:46 : echo.exe: 即将发送文件：【E:\AutoItWork\RemoteControl\release\utils\tmp\114233653207088.txt】中的内容。
+2008-05-05 19:44:46 : echo.exe: E:\AutoItWork\RemoteControl\release\utils\email.exe "oicqcx@hotmail.com" "chen.xu8@zte.com.cn" "echo.exe report, E:\AutoItWork\RemoteControl\release\utils\echo.exe ''" "E:\AutoItWork\RemoteControl\release\utils\tmp\114233653207088.txt"
+2008-05-05 19:45:47 : email.exe: Notes未启动或者无法新建邮件。
+2008-05-05 19:48:10 : RCServer.exe: 命令行【E:\AutoItWork\RemoteControl\release\utils\echo.exe ""】
+2008-05-05 19:48:11 : echo.exe: 即将发送文件：【E:\AutoItWork\RemoteControl\release\utils\tmp\114847194244020.txt】中的内容。
+2008-05-05 19:48:11 : echo.exe: E:\AutoItWork\RemoteControl\release\utils\email.exe "oicqcx@hotmail.com" "chen.xu8@zte.com.cn" "echo.exe report, E:\AutoItWork\RemoteControl\release\utils\echo.exe ''" "E:\AutoItWork\RemoteControl\release\utils\tmp\114847194244020.txt"
+2008-05-05 19:55:19 : RCServer.exe: 命令行【E:\AutoItWork\RemoteControl\release\utils\echo.exe ""】
+2008-05-05 19:55:20 : echo.exe: 即将发送文件：【E:\AutoItWork\RemoteControl\release\utils\tmp\116134736668890.txt】中的内容。
+2008-05-05 19:55:20 : echo.exe: E:\AutoItWork\RemoteControl\release\utils\email.exe "oicqcx@hotmail.com, chen.xu8@zte.com.cn" "" "echo.exe report, E:\AutoItWork\RemoteControl\release\utils\echo.exe ''" "E:\AutoItWork\RemoteControl\release\utils\tmp\116134736668890.txt"
+2008-05-05 19:57:28 : RCServer.exe: IM发送响应成功！
+2008-05-05 19:58:30 : RCServer.exe: IM发送响应成功！
+2008-05-05 19:59:30 : RCServer.exe: 命令行【E:\AutoItWork\RemoteControl\release\utils\email.exe "chen.xu8@zte.com.cn" "" "subject" "" "e:\班车4号线.exe"】
+2008-05-05 20:05:48 : RCServer.exe: 命令行【E:\AutoItWork\RemoteControl\release\utils\email.exe "chen.xu8@zte.com.cn" "" "subject" "" "e:\班车4号线.exe"】
+2008-05-05 20:07:51 : RCServer.exe: 命令行【E:\AutoItWork\RemoteControl\release\utils\email.exe "chen.xu8@zte.com.cn" "" "subject" "" "e:\AutoItWork\RemoteControl\RemoteControl.rar"】
+2008-05-05 20:10:56 : RCServer.exe: 命令行【E:\AutoItWork\RemoteControl\release\utils\echo.exe ""】
+2008-05-05 20:10:57 : echo.exe: 即将发送文件：【E:\AutoItWork\RemoteControl\release\utils\tmp\118946080392705.txt】中的内容。
+2008-05-05 20:10:57 : echo.exe: E:\AutoItWork\RemoteControl\release\utils\email.exe "oicqcx@hotmail.com, chen.xu8@zte.com.cn" "" "echo.exe report, E:\AutoItWork\RemoteControl\release\utils\echo.exe ''" "E:\AutoItWork\RemoteControl\release\utils\tmp\118946080392705.txt"
+2008-05-05 20:14:46 : RCServer.exe: IM发送响应成功！
+2008-05-05 20:20:25 : RCServer.exe: 命令行【E:\AutoItWork\RemoteControl\release\utils\email.exe "oicqcx@gmail.com" "" "subject" "body"】
+2008-05-05 20:59:13 : RCServer.exe: IM发送响应成功！
+2008-05-05 21:05:08 : RCServer.exe: 命令行【E:\AutoItWork\RemoteControl\release\utils\email.exe "oicqcx@hotmail.com" "" "common" "send me common.au3" "E:/AutoItWork/RemoteControl\common.au3"】
+2008-05-05 21:06:48 : RCServer.exe: 命令行【E:\AutoItWork\RemoteControl\release\utils\email.exe "oicqcx@hotmail.com" "" "common" "send me common.au3" "E:/AutoItWork/RemoteControl/common.au3"】
+2008-05-05 21:07:48 : email.exe: Notes未启动或者无法新建邮件。
+2008-05-05 21:12:11 : RCServer.exe: IM发送响应成功！
+2008-05-05 21:15:11 : RCServer.exe: IM发送响应成功！
+2008-05-05 21:17:02 : RCServer.exe: 命令行【E:\AutoItWork\RemoteControl\release\utils\email.exe "oicqcx@hotmail.com" "" "common" "send me common.au3" "E:/AutoItWork/RemoteControl/common.au3"】
+2008-05-05 21:18:02 : email.exe: Notes未启动或者无法新建邮件。
+2008-05-05 21:22:14 : RCServer.exe: IM发送响应成功！

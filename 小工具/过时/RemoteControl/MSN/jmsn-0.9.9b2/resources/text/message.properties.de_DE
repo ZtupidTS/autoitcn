@@ -1,0 +1,171 @@
+# $Id: message.properties.de_DE,v 0.02 2002/13/08 23:30:34 thz Exp $
+file.transfer.complete = Dateiübertragung beendet: "{0}"
+who.added.me = {0} hat Sie hinzugefügt.
+add.approve = Akzeptieren und hinzufügen.
+add.reject = Abblehnen und blockieren.
+
+button.add = Hinzufügen
+button.ok = OK
+button.close = Schließen
+button.cancel = Abbrechen
+button.find = finden
+button.file.send = Datei versenden
+button.submit = Übertragen(S)
+
+checkbox.use = Benutzen
+
+title.adduser = Neuen Benutzer hinzufügen
+title.addgroup = Neue Gruppe hinzufügen
+title.changefont = Schrift ändern
+title.alarm = Alarm
+title.login = Anmelden
+title.option = Option
+title.bugreport = Bug berichten.
+title.reqfeature = Wunsch eines neuen Feature
+title.loginfail = Anmelden fehlgeschlagen
+title.renameuser = Rename friend's nick
+
+add.fail.overflow = Benutzer kann nicht hinzugefügt werden, da Ihre Liste voll ist.
+add.fail.exist = Benutzer ist schon vorhanden.
+add.fail.unknown-user = Unbekannter Benutzer
+add.ok = {0} erfolgreich hinzugefügt.
+add.email = eMail-Addresse
+add.email.detail = Die eMail-Addresse des Benutzers eingeben
+
+label.loginname = eMail-Addresse
+label.password = Passwort
+label.remember.password = Passwort auf diesem Computer speichern
+label.initstatus = Anmeldestatus
+label.friendlyname = Buddyname
+label.sound.login = Ton bei Anmeldung eines Buddy's
+label.sound.msg = Ton bei ankommender Nachricht
+label.file.auto.accept = Dateien automatisch akzeptieren und herunterladen
+label.folder.download = Verzeichnis für heruntergeladene Dateien
+label.folder.chatlog = Verzeichnis für Chat-Log-Dateien
+label.login.please = Bitte erst anmelden!
+label.subject = Betreff
+label.emoticon = Smiley
+label.font = Schrift
+label.splash.clickme = Zum Anmelden hier klicken...
+label.splash.onlogin = Anmelden...
+label.splash.onlogout = Abmelden...
+label.buddy.backimg = Hintergrundbild wählen
+label.transparent.level = Transparency Level Control
+label.fontsize = Größe
+label.fontproperties = Effekt
+label.fontpreview = Vorschau
+label.fontpreviewstring = Abc
+label.fontbold = Fett
+label.fontitalic = Kursiv
+label.fontunderline = Unterstrichen
+label.fontstrikethrough = Durchgestrichen
+label.israndomcolor = Zufallsfarbe
+label.choosefontcolor = Schriftfarbe wählen
+label.chooselistfont.color = Schriftfarbe für Buddyliste wählen
+label.timestamp = Zeit im Chat anzeigen
+label.emoticon.view = Smileys im Chat anzeigen
+labal.use.fixed.font = Einheitliche Schriftart im Chat benutzen
+label.inboxunread = Inbox Unread
+
+chatdlg.filesend.request.ok = Datei "{1}" wird an {0} geschickt. 
+chatdlg.filesend.request.fail = Datei konnte nicht versendet werden.
+chatdlg.filesend.accept = {0} hat der Datenübertragung zugestimmt. Übertragung beginnt.
+chatdlg.filesend.reject = {0} hat die Datenübertragung abgelehnt.
+chatdlg.filerecv.notify = {0} versucht Ihnen die Datei {1} zu schicken. Zum Annehmen (Alt+T) oder (Alt+D) drücken.
+chatdlg.filerecv.reject = Dateiübertragung wurde abgelehnt.
+chatdlg.msg.offline = {0} hat sich abgemeldet.
+chatdlg.msg.invite = {0} bittet um eine Einladung.
+chatdlg.msg.top = Geben Sie im Chat NIEMANDEM Ihr Passwort oder Ihre Kreditkartennummer!\n
+chatdlg.msg.typing = {0} schreibt... {1}
+chatdlg.msg.notsend.offline = Sie können nicht schreiben, da ihr Status 'offline' ist.
+chatdlg.msg.transfer.4eva = Diese Datei wird komplett übertragen, auch wenn Sie dieses Fenster schließen.
+chatdlg.msg.whojoin = {0}, {1} wurde dem Gespräch hinzugefügt.
+chatdlg.msg.whopart = {0}, {1} hat den Chat verlassen.
+chatdlg.msg.timeout = Die Verbindung wird unterbrochen, weil {0} Minuten keine Meldung verschickt wurde.
+chatdlg.query.dirsend.title = Verzeichnisübertragung bestätigen
+chatdlg.query.dirsend.content = Sie sind dabei ein Verzeichnis zu verschicken.\n Möchten Sie es vorher in eine Zip-Datei Packen?
+chatdlg.chat = {0} sagt:\n
+chatdlg.chat.opened = Chat-Sitzung eröffnet
+chatdlg.chat.error = Meldung konnte nicht zugestellt werden:\n{0}
+chatdlg.msg.ssclose = Sitzung wurde vom MSN-Server beendet.
+
+renamedlg.uname = Make Friend's NickName
+
+remdlg.query.remove.title = Benutzer löschen
+remdlg.query.remove.content = Möchten Sie {0} wirklich löschen?
+remgdlg.query.remove.title = Gruppe löschen
+remgdlg.query.remove.content = Möchten Sie {0} wirklich löschen?
+remgdlg.exist.title = Gruppe konnte nicht gelöscht werden
+remgdlg.exist.content = Bitte die Benutzer dieser Gruppe erst \n in eine andere Gruppe kopieren
+remgdlg.gname = Neuer Gruppenname
+remgdlg.query.gname = Neuer Gruppenname
+
+zipdlg.msg.fail = Packen fehlgeschlagen: {0}
+zipdlg.msg.ready = Bereit zum Packen des Verzeichnis
+zipdlg.msg.working = Packen...
+
+status.online = Online
+status.offline = Offline
+status.away = Abwesend
+status.brb = Bin gleich zurück
+status.busy = Beschäftigt
+status.idle = Untätig
+status.hidden = Als offline anzeigen
+status.eat = Mittagspause
+status.phone = Am Telefon
+status.unknown = Unknown status
+
+menu.file = Datei
+menu.file.mnemonic = D
+menu.item.login = Anmelden...
+menu.item.logout = Abmelden
+menu.item.exit = Beenden
+
+menu.view = Ansicht
+menu.view.mnemonic = A
+menu.item.friendview = Darstellung der Benutzer
+menu.item.friendview.fn = Durch Spitznamen
+menu.item.friendview.ln = Durch eMail-Addressen
+menu.item.friendview.fnln = Durch Spitznamen und eMail-Addressen
+menu.item.friendview.my = By friendly name what I made
+menu.item.refresh = Buddyliste aktualisieren
+menu.item.off.ignore = Keine abgemeldeten Benutzer zeigen
+menu.item.alwaysontop = Immer ganz oben
+menu.item.lnf = Look and feel
+menu.item.locale = Sprache
+
+menu.tool = Aktionen
+menu.tool.mnemonic = K
+menu.item.chstatus = Status ändern
+menu.item.adduser = Neuen Benutzer hinzufügen...
+menu.item.renameuser = Make user's nickname
+menu.item.removeuser = Benutzer löschen
+menu.item.addgroup = Neue Gruppe hinzufügen...
+menu.item.renamegroup = Gruppe umbenennen
+menu.item.removegroup = Gruppe löschen
+menu.item.blockuser = Benutzer sperren
+menu.item.unblockuser = Benutzer zulassen
+menu.item.blockgroup = Gesamte Gruppe sperren
+menu.item.unblockgroup = Gesamte Gruppen zulassen
+
+menu.item.option = Optionen(O)...
+menu.item.option.mnemonic = O
+
+menu.help = Hilfe
+menu.help.mnemonic = H
+menu.item.bugreport = Bug berichten
+menu.item.reqfeature = Wunsch nach neuem Feature
+menu.item.about = Über JMSN...
+
+event.login = {1} hat sich angemeldet. ({0})
+event.logout.1 = {0} hat sich abgemeldet.
+event.logout.2 = {1} hat sich abgemeldet. ({0})
+event.ring = {1} möchte Sie sprechen. ({0})
+
+err.209 = Dieser Spitzname ist nicht erlaubt.
+err.911 = Falscher Name oder Passwort.\nBitte noch einmal versuchen.
+err.921 = Server überlastet. Bitte versuchen Sie es später noch einmal.
+
+label.photo.show.me = Use my photo
+label.photo.show.other = View friend's photo on chat
+label.photo.title = Select Your Photo

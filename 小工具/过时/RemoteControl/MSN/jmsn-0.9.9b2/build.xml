@@ -1,0 +1,111 @@
+<?xml version="1.0"?>
+
+<!--
+  -   JMSN Messenger for Java Swing End-user
+  -   Minumum requirement is JRE 1.3
+  -
+  -   @author Jangho Hwang, rath@linuxkorea.co.kr
+  -->
+
+<project name="JMSN Messenger for java swing" default="build">
+
+	<property name="src" value="src"/>
+	<property name="build" value="build"/>
+	<property name="dist" value="dist"/>
+	<property name="lib" value="lib"/>
+	<property name="resource" value="resources"/>
+	<property name="MainJar" value="jmsn.jar"/>
+
+	<target name="compile">
+		<mkdir dir="${build}"/>
+		<javac srcdir="${src}"
+			destdir="${build}"
+			deprecation="yes"
+			source="1.3"
+			target="1.3"
+			debug="yes">
+		<classpath>
+			<pathelement path="${lib}/msnm.jar"/>
+		</classpath>
+		</javac>
+	</target>
+
+	<target name="build" depends="compile">
+		<jar jarfile="${MainJar}"
+			manifest="${src}/Manifest.mf"
+			compress="yes">
+			<fileset dir="${build}"/>
+			<fileset dir="." includes="${resource}/sounds/**"/>
+			<fileset dir="." includes="${resource}/icon/*.jpg"/>
+			<fileset dir="." includes="${resource}/icon/*.gif"/>
+			<fileset dir="." includes="${resource}/text/*properties*"/>
+			<fileset dir="." includes="${resource}/image/*.jpg"/>
+			<fileset dir="." includes="${resource}/emoticon/*"/>
+		</jar>
+	</target>
+
+	<target name="dist" depends="build">
+		<mkdir dir="${dist}"/>
+		<property name="dist.dir" value="jmsn-${build.version}"/>
+
+		<!-- zip source -->
+		<mkdir dir="${dist}/${dist.dir}"/>
+		<copy todir="${dist}/${dist.dir}">
+			<fileset dir="." 
+			excludes="**/CVS/**, .cvsignore, classes/**, bak/**, build/**, jmsn.*, dist/**"/>
+		</copy>
+		<zip zipfile="${dist}/jmsn-${build.version}-src.zip"
+			basedir="${dist}" includes="${dist.dir}/**"/>
+		<delete dir="${dist}/${dist.dir}"/>
+
+		<!-- zip binary -->
+		<mkdir dir="${dist}/${dist.dir}"/>
+		<copy todir="${dist}/${dist.dir}">
+			<fileset dir="." 
+			excludes="**/CVS/**, .cvsignore, classes/**, bak/**, build/**, build.xml, jmsn.jp*, dist/**, src/**, resources/**"/>
+		</copy>
+		<zip zipfile="${dist}/jmsn-${build.version}.zip"
+			basedir="${dist}" includes="${dist.dir}/**"/>
+		<delete dir="${dist}/${dist.dir}"/>
+
+		<!-- tar source -->
+		<mkdir dir="${dist}/${dist.dir}"/>
+		<copy todir="${dist}/${dist.dir}">
+			<fileset dir="." 
+			excludes="**/CVS/**, .cvsignore, classes/**, bak/**, build/**, jmsn.*, dist/**, lib/rath_awt.dll"/>
+		</copy>
+		<tar destfile="${dist}/jmsn-${build.version}-src.tar.gz"
+			compression="gzip"
+			basedir="${dist}" includes="${dist.dir}/**"/>
+		<delete dir="${dist}/${dist.dir}"/>
+
+		<!-- tar binary -->
+		<mkdir dir="${dist}/${dist.dir}"/>
+		<copy todir="${dist}/${dist.dir}">
+			<fileset dir="." 
+			excludes="**/CVS/**, .cvsignore, classes/**, bak/**, build/**, build.xml, jmsn.jp*, dist/**, src/**, resources/**, jmsn.exe, jmsn.prop, lib/rath_awt.dll, gen*"/>
+		</copy>
+		<tar tarfile="${dist}/jmsn-${build.version}.tar.gz"
+			compression="gzip" 
+			basedir="${dist}" 
+			includes="${dist.dir}/**"/>
+	</target>
+
+	<target name="upload" depends="dist">
+	    <ftp server="upload.sourceforge.net"
+			action="put"
+			userid="ftp"
+			password="rath@linuxkorea.co.kr"
+			remotedir="incoming"
+			binary="yes">
+			<fileset dir="${dist}"/>
+		</ftp>
+	</target>
+
+	<target name="clean">
+		<delete file="${MainJar}"/>
+		<delete dir="${build}"/>
+		<delete dir="${dist}"/>
+	</target>
+
+</project>

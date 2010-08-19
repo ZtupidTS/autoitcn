@@ -1,0 +1,15 @@
+<head>
+	<title>PCSCF</title>
+</head>
+<body>
+<p><font size="2">P_CSCF是IMS域拜访域控制平面统一的初步入口点，将来自拜访地接入网络的SIP消息，包括登记、多媒体会话等，代理转接到其归属地的S-CSCF（根据登记时记录的信息）或I-CSCF（根据SIP UA携带的归属域名）；</font><font size="2"><br />
+</font></p>
+<ol>
+    <li>负责与IMS SIP终端之间可选的SIP消息压缩/解压缩，提高无线接入空口带宽的利用率；</li>
+    <li><font size="2">在会话建立过程中解析用户面SDP信息，通过Diameter与QoS策略执行实体PDF的交互，将QoS承载需求（带宽，时延/抖动级别等）知会PDF，再由PDF通过COPS将QoS策略决定最终下发到IP接入汇聚层设备或边缘路由器进行策略执行，最终为IMS业务所使用的本地接入网IP QoS资源提供认证授权功能，实现IMS业务的端到端QoS服务保障；在会话释放时通知PDF在IP承载控制层释放相应资源占用信息；</font></li>
+    <li><font size="2">负责IMS会话相关计费话单产生，将接入网与IMS计费信息相关联，并将CDR通过Diameter送往CCF；</font></li>
+    <li><font size="2">作为SIP UA处理处理异常情况下的会话终结及相应SIP消息生成；<br />
+    </font></li>
+</ol>
+</body>
+</html>

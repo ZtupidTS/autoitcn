@@ -1,0 +1,59 @@
+
+外部命令
+■自动刷卡
+ac:<add|del|show|now>, week, time
+ac:add, 1, 0800
+ac:del, 1, 2015
+ac:show
+ac:now
+
+■发送email
+email:<sendTo1[; sendTo2]>[, subject][, content][, attatchment1][, attatchment2]
+email:oicqcx@hotmail.com; aa@bb.com, suject, content, c:\att.rar
+email:oicqcx@hotmail.com, suject, c:\tmpcontent.txt, c:\att_1.rar, c:\att_2.rar
+
+■开启windows的远程登录功能
+enable-windows-rmtctrl:
+
+■显示程序窗口实时图片，任务状态等
+show:task, [window|process]
+task：用文本方式返回当前任务状态。
+参数：window的时候返回所有在任务栏上的任务的名称
+      process的时候返回所有进程的名称
+show:screen, [window_name]
+screen：用图片方式返回当前屏幕的内容。参数：缺省，当前窗口的抓图；window_name返回指定窗口名称的抓图，如果window_name不存在，则按照缺省处理
+
+■mstsc远程登录
+mstsc: ip, username, pwd 打开一个远程登录窗口
+mstsc: ip, "close" 关闭一个已经存在的远程登录窗口
+
+■explorer查看目标计算机硬盘的文件
+explorer: <dir>, <recursion>
+
+■echo命令，用来查看rcserver是否在运行
+echo没有参数
+如果rcserver正常，则返回当前接收命令的msn的帐号，机器的ip地址等信息
+
+■viewlog命令，发送最后n条log信息回来
+viewlog: [number]
+
+■run命令
+run:<file, arguments>
+run: c:\aa.exe, arg1 arg2 arg3
+
+■kill命令
+kill: <pid>, [t | terminate]
+<pid> 的判断顺序是：
+如果pid代表的进程存在，则会直接杀掉该进程，这个时候，t加上不加上效果一样；
+如果pid代表的进程不存在，则认为这是一个窗口的title，这个时候，会去用WinClose命令去关闭该窗口（如果存在），如果不加t，则马上返回，这个时候，该窗口可能由于需要确认或者无响应而导致不能成功关闭，如果加了t，则在1分钟之内该窗口还在，会去找到对应的进程，并且杀掉进程。
+参数 t 是，直接杀掉进程，而不是关闭窗口。
+
+
+=======================
+
+
+
+增加run功能，用来启动某个程序；增加kill 功能，用来杀掉某个程序。
+
+
+
