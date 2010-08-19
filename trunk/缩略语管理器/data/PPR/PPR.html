@@ -1,0 +1,7 @@
+<html>
+<body>
+<font size=2>
+HSS主动更新scscf中的数据<br>执行了SAR和SAA命令后，用户和服务相关的数据会从hss下载到cscsf中，不过在此之后，scscf仍然在为用户服务时，hss上的这些数据有可能被修改，为了更新scscf中的数据，hss启动一个ppr命令。包含：<br>1、pvi<br>2、路由信息，包含了scscf的sip uri<br>3、用户数据。<br><br>一旦数据发生改变，ppr马上进行，只有一种情况例外：scscf正在为一个未注册的用户服务，或者scscf被保留给一个未注册的用户。PPR由PPA命令确认。PPA命令简单的指出了PPR的结果
+<br></font>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Radical_2>
+  <Settings>
+    <General>
+      <RunOnStartup>0</RunOnStartup>
+      <StartHidden>0</StartHidden>
+      <TimeStampConsole>0</TimeStampConsole>
+    </General>
+    <Network>
+      <Port>1451</Port>
+      <ListenIP>0.0.0.0</ListenIP>
+    </Network>
+    <Client>
+      <ScreenshotQuality>100</ScreenshotQuality>
+    </Client>
+  </Settings>
+</Radical_2>

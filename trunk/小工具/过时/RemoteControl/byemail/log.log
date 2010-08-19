@@ -1,0 +1,4 @@
+2008-08-07 19:36:37 : 执行命令：.\utils\email.exe "gogocx@Tom.com" "555" "4444" "d:\dump.txt" 
+2008-08-07 19:36:37 : 接收到命令：email:gogocx@Tom.com ,555,4444,d:\dump.txt
+2008-08-07 19:31:57 : 命令：email配置路径无效。
+2008-08-07 19:31:57 : 接收到命令：email:gogocx@Tom.com,44444,2222222255555555

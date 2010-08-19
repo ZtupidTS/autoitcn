@@ -1,0 +1,16 @@
+EXPORTS
+    AU3_FreeVar @1
+    AU3_GetPluginDetails @2
+    _ZipAdd @3
+    _ZipAddDir @4
+    _ZipAddFileToZip @5
+    _ZipAddFolder @6
+    _ZipClose @7
+    _ZipCreate @8
+    _ZipDeleteFile @9
+    _ZipFormatMessage @10
+    _ZipGetCount @11
+    _ZipGetItemInfo @12
+    _ZipPluginAbout @13
+    _ZipUnZip @14
+    _ZipUnZipItem @15

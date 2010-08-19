@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!--
+关于本文档的说明：
+1、每一个结构（包括接口）都可以配置实例号，用于实现多个实例。
+   如果未配置instance属性，则认为该接口的实例号是0，
+   如果有多个未配置实例号的接口，则只有第一个才有效，其它的无效。
+   这同样适用于配置了重复的实例号的情况。
+2、简单数据类型没有实例号的概念
+3、一个简单数据类型是否是数组，取决于member节点是否有value子节点，
+   如果member节点配置value子节点，则认为是一数组，否则认为非数组。
+   对于非数组情况下如果未配置value属性，则自动填充0作为数据。
+4、一个嵌套结构类型是否是数组，判断原则类似于简单数据类型。
+-->
+<simulator>
+	<events>
+<event id="21" if="INTERFACE_SIMPLE_1" instance="0"/>
+</events>
+	<types>
+		<type name="BYTE" len="1"/>
+		<type name="WORD" len="2"/>
+		<type name="WORD16" len="2"/>
+		<type name="DWORD" len="4"/>
+		<type name="WORD32" len="4"/>
+	</types>
+	<structs>
+		<struct name="INTERFACE_COMPLEX_1" instance="0">
+			<member name="member_c_11" type="WORD" value="0"/>
+			<member name="member_c_12" type="BYTE" value="0"/>
+			<member name="member_c_13" type="INTERFACE_SIMPLE_1" instance="0"/>
+		</struct>
+		<struct name="INTERFACE_SIMPLE_1" instance="0">
+			<member name="member11" type="WORD" value="0"/>
+			<member name="member12" type="BYTE" value="0"/>
+			<member name="member13" type="BYTE" value="0"/>
+		</struct>
+	</structs>
+	<structs_def>
+		<struct name="INTERFACE_COMPLEX_1">
+			<member name="member_c_11" type="WORD"/>
+			<member name="member_c_12" type="BYTE"/>
+			<member name="member_c_13" type="INTERFACE_SIMPLE_1"/>
+		</struct>
+		<struct name="INTERFACE_COMPLEX_2">
+			<member name="member_c_21" type="WORD"/>
+			<member name="member_c_22" type="BYTE"/>
+			<member name="member_c_23" type="INTERFACE_SIMPLE_1" array_len="4"/>
+			<member name="member_c_24" type="INTERFACE_SIMPLE_3" array_len="2"/>
+			<member name="member_c_25" type="INTERFACE_SIMPLE_2" array_len="2"/>
+		</struct>
+		<struct name="INTERFACE_COMPLEX_3">
+			<member name="member_c_31" type="WORD"/>
+			<member name="member_c_32" type="INTERFACE_COMPLEX_2"/>
+		</struct>
+		<struct name="INTERFACE_COMPLEX_4">
+			<member name="member_c_41" type="INTERFACE_COMPLEX_3"/>
+		</struct>
+		<struct name="INTERFACE_COMPLEX_5">
+			<member name="member_c_51" type="INTERFACE_COMPLEX_4"/>
+		</struct>
+		<struct name="INTERFACE_COMPLEX_6">
+			<member name="member_c_61" type="INTERFACE_COMPLEX_5"/>
+		</struct>
+		<struct name="INTERFACE_COMPLEX_7">
+			<member name="member_c_71" type="INTERFACE_COMPLEX_6"/>
+		</struct>
+		<struct name="INTERFACE_COMPLEX_8">
+			<member name="member_c_81" type="INTERFACE_COMPLEX_7"/>
+		</struct>
+		<struct name="INTERFACE_SIMPLE_1">
+			<member name="member11" type="WORD"/>
+			<member name="member12" type="BYTE"/>
+			<member name="member13" type="BYTE"/>
+		</struct>
+		<struct name="INTERFACE_SIMPLE_2">
+			<member name="member21" type="WORD"/>
+			<member name="member22" type="BYTE" array_len="32"/>
+			<member name="member23" type="WORD"/>
+		</struct>
+		<struct name="INTERFACE_SIMPLE_3">
+			<member name="member31" type="WORD" array_len="16"/>
+			<member name="member32" type="BYTE" array_len="16"/>
+			<member name="member33" type="BYTE" array_len="16"/>
+		</struct>
+	</structs_def>
+</simulator>

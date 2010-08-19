@@ -1,0 +1,85 @@
+F.A.Q
+----------------------------------------------------------------------------------
+1、如果工具在编译swf的时候，控制台报这个错：
+		Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+			at java.util.Arrays.copyOfRange(Arrays.java:3209)
+			at java.lang.String.<init>(String.java:216)
+			at org.jdom.input.TextBuffer.append(TextBuffer.java:104)
+			at org.jdom.input.SAXHandler.characters(SAXHandler.java:568)
+			...
+	
+表示当前待编译的人机命令脚本过大，jvm分配的内存不足。
+解决办法是：编辑工具所在目录下的这个文件：config.ini，
+将jvm_opt前面的“#”去掉，并根据自己的电脑内存配置修改一个适当的值，再重试。
+----------------------------------------------------------------------------------
+
+2、如果工具在编译swf的时候，控制台报这个错：
+		Error occurred during initialization of VM
+		Could not reserve enough space for object heap
+		Could not create the Java virtual machine.
+		预编译程序生成临时文件失败
+表示jvm启动需要的内存过大，已经超过了当前电脑的可用内存了。
+解决办法是：编辑工具所在目录下的这个文件：config.ini，
+修改jvm_opt的值：-Xms256m -Xmx1024m -XX:MaxPermSize=256m，根据自己的电脑内存配置修改一个适当的值，再重试。
+----------------------------------------------------------------------------------
+
+3、我使用按配置文件方式编译，选择了一个mml.properties文件后，出现下面错误，为什么？
+file found: Embed("../../../mml/clis/cn-comm-pm/cn-comm-pm-mml-cmdinfo.xml", mimeType="application/octet-stream")
+file found: Embed("../../../mml/clis/cn-comm-oamems/cn-comm-oamems-mml-cmdinfo.xml", mimeType="application/octet-stream")
+file found: Embed("../../../mml/clis/cn-comm-comm/cn-comm-comm-mml-cmdinfo-i18n.xml", mimeType="application/octet-stream")
+file found: Embed("../../../mml/clis/cn-comm-comm/cn-comm-comm-mml-enum.xml", mimeType="application/octet-stream")
+cmdinfo/enuminfo/cmdtree file created.
+mml_zh.properties/mml_en.properties created.
+java.io.FileNotFoundException: D:\tmp\Embed("..\..\..\mml\clis\cn-comm-pm\cn-comm-pm-mml-cmd-tree.xml", mimeType="application\octet-stream") (系统找不到指定的路径。)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(FileInputStream.java:106)
+	at java.io.FileInputStream.<init>(FileInputStream.java:66)
+	at sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:70)
+	at sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:161)
+	...
+
+原因是可能你把老版本中的mml.properties文件直接拿来使用了，而本工具输入的properties文件中，每一行都应该是一个文件，而不是以前的格式。
+解决办法是：对mml.properties文件进行如下修改
+a 把所有 “Embed("”  和 “", mimeType="application/octet-stream")” 这2个字符串全部删除
+b 把所有的  XXX.i18n 的所在行都删除
+c 把所有的  XXX.errorinfo 和 XXX.errorinfo.i18n 的所在行都删除
+d 把 comm-i18n 行删除
+
+修改后的mml.properties文件看起来应该是类似下面这样的：
+cn-comm-cm.cmdinfo = ../../../mml/clis/cn-comm-cm/cm-core-mml-cmdinfo.xml
+cn-comm-cm.enuminfo = ../../../mml/clis/cn-comm-cm/cm-core-mml-enum.xml
+cn-comm-cm.cmdtreeinfo = ../../../mml/clis/cn-comm-cm/cm-core-mml-cmd-tree.xml
+----------------------------------------------------------------------------------
+
+4、在编译swf的时候，控制台报了这个错，请问如何解决？
+java.lang.NoClassDefFoundError: com/zte/mml/common/managers/Main
+Caused by: java.lang.ClassNotFoundException: com.zte.mml.common.managers.Main
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:200)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:188)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:276)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:251)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:319)
+	
+原因很可能是你的工具安装出错了，或者人机命令预编译工具（Scanner）工具损坏了导致的
+解决办法是：打开工具所作目录下的这个文件config.ini，搜索并删除这一行  scanner_installed=True
+保存后重启工具，应该会提示需要安装工具，再次安装即可。
+----------------------------------------------------------------------------------
+
+5、在编译swf的时候，控制台报了这个错，请问如何解决？
+C:\Documents and Settings\chenxucc>"D:\AutoItWork\命令行编译资源辅助\复件 !Release\bin\flex_sdk\bin\mxmlc.exe"  -locale=en_US -source-path="D:\tmp\1" -include-resource-bundles=mml_en,collections,containers,controls,core,effects,skins,styles -output "D:\tmp\1\mml_resource_en.swf"
+flex2.compiler.config.FileConfigurator.LoadingConfiguration[level='info', column='-1', file='D:\AutoItWork\命令行编译资源辅助\复件 !Release\bin\flex_sdk\frameworks\flex-config.xml', line='-1', path]
+D:\tmp\1\mml_en.properties: Error: flex2.compiler.util.VelocityManager.InitializationError[level='error', column='-1', message, line='-1', path='D:\tmp\1\mml_en.properties']
+D:\tmp\1\mml_en.properties(6): Error: flex2.compiler.media.AbstractTranscoder.UnableToGenerateSource[level='error', column='-1', line='6', className='en_US$mml_en_properties__embed_properties_D__tmp_1_cmdinfo_cm_core_mml_cmdinfo_xml_1280901227271_en_dat_1178126743', path='D:\tmp\1\mml_en.properties']
+cm-core-mml-cmdinfo.xml.1280901227271 = Embed("D:/tmp/1/cmdinfo/cm-core-mml-cmdinfo.xml.1280901227271_en.dat", mimeType="application/octet-stream")
+D:\tmp\1\mml_en.properties(6): Error: flex2.compiler.as3.EmbedEvaluator.UnableToTranscode[level='error', column='-1', line='6', what='D:/tmp/1/cmdinfo/cm-core-mml-cmdinfo.xml.1280901227271_en.dat', path='D:\tmp\1\mml_en.properties']
+
+
+D:\tmp\1\mml_en.properties(18): Error: flex2.compiler.media.AbstractTranscoder.UnableToGenerateSource[level='error', column='-1', line='18', className='en_US$mml_en_properties__embed_properties_D__tmp_1_enuminfo_cn_comm_oamems_mml_enum_xml_1280901239802_en_dat_184567657', path='D:\tmp\1\mml_en.properties']
+cn-comm-oamems-mml-enum.xml.1280901239802 = Embed("D:/tmp/1/enuminfo/cn-comm-oamems-mml-enum.xml.1280901239802_en.dat", mimeType="application/octet-stream")
+D:\tmp\1\mml_en.properties(18): Error: flex2.compiler.as3.EmbedEvaluator.UnableToTranscode[level='error', column='-1', line='18', what='D:/tmp/1/enuminfo/cn-comm-oamems-mml-enum.xml.1280901239802_en.dat', path='D:\tmp\1\mml_en.properties']
+...........
+
+原因很可能是本工具所在目录名称包含flex sdk编译swf的时候不允许的字符有关
+解决办法是：原来工具所作目录是“D:\AutoItWork\命令行编译资源辅助\复件 !Release”，把“复件 !Release”改为不带感叹号的目录就好了

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="GB2312"?>
+<meetingroom>
+	<date20081103>
+		<bookinfo by="name">
+			<reason>some reason...</reason>
+			<cells>
+				<cell id="2"/>
+				<cell id="3"/>
+			</cells>
+		</bookinfo>
+		<bookinfo by="name1">
+			<reason>some reason...</reason>
+			<cells>
+				<cell id="4"/>
+				<cell id="5"/>
+			</cells>
+		</bookinfo>
+	</date20081103>
+	<date20081104>
+		<bookinfo by="name">
+			<reason>some reason...</reason>
+			<cells>
+				<cell id="2"/>
+				<cell id="3"/>
+			</cells>
+		</bookinfo>
+		<bookinfo by="name1">
+			<reason>some reason...</reason>
+			<cells>
+				<cell id="4"/>
+				<cell id="5"/>
+			</cells>
+		</bookinfo>
+	</date20081104>
+	
+	<cells>
+		<cell id="2"/>
+		<cell id="3"/>
+	</cells>
+</meetingroom> 

@@ -1,0 +1,347 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+<meta content="text/html; charset=UTF-8" http-equiv="content-type"><title>CC Helper</title></head>
+<body>
+<span style="color: rgb(0, 0, 255);"><strong><big><span style="font-family: 宋体;"><big><big>CC助手（ClearCase
+Helper）</big></big><br>
+</span></big></strong></span><span style="font-size: medium;"><span><span><span><span style="font-family: 宋体;"><small><br>
+</small><big>版&nbsp;&nbsp;&nbsp;
+本：2.1.8<br>
+更新日期：2009年05月26日<br>
+<a target="_top" href="mailto:chenxu8@zte.com.cn">和
+我联系</a></big>
+</span></span></span></span></span><br>
+<br>
+<hr style="width: 100%; height: 2px;">
+<ol>
+<li><big><span style="font-family: 宋体;"><span style="font-size: medium;"><a href="#interview">介
+绍</a></span></span></big></li>
+<li><big><span style="font-family: 宋体;"><span style="font-size: medium;"><a href="#merge">Merge
+菜单</a><br>
+</span></span></big>
+<ul>
+<li><a href="#merge1"><big><span style="font-family: 宋体;"><span style="font-size: medium;">Merge
+按钮</span></span></big></a></li>
+<li><a href="#merge2"><big><span style="font-family: 宋体;"><span style="font-size: medium;">Merge
+多个文件夹菜单</span></span></big></a></li>
+<li><big><span style="font-family: 宋体;"><span style="font-size: medium;"><a href="#merge3">Merge
+单个文件夹菜单</a><br>
+</span></span></big></li>
+</ul>
+</li>
+<li><big><span style="font-family: 宋体;"><span style="font-size: medium;"><a href="#se">Selection
+菜单<br>
+</a></span></span></big>
+<ul>
+<li><a href="#se1">复制cc路径</a></li>
+<li><a href="#se2">复制硬盘路径</a></li>
+<li><a href="#se3">在浏览器中打开…</a></li>
+<li><a href="#se4">搜索私有文件</a></li>
+<li><a href="#se5">常用文件夹</a></li>
+<li><a href="#se6">CliBuilier助手</a><br>
+</li>
+</ul>
+</li>
+<li><big><span style="font-family: 宋体;"><span style="font-size: medium;"><a href="#cq">ClearQuest
+菜单<br>
+</a></span></span></big>
+<ul>
+<li><a href="#cq1">启动CQ</a></li>
+<li><a href="#cq2">新建变更单</a></li>
+<li><a href="#cq3">提交处理方案<br>
+</a>
+<ul>
+<li><a href="#cq3">提交处理方案</a></li>
+<li><a href="#cq4">添加已选的文件</a></li>
+</ul>
+</li>
+<li><a href="#cq5">配置</a></li>
+</ul>
+<big><span style="font-family: 宋体;"><span style="font-size: medium;"> </span></span></big></li>
+<li><big><span style="font-family: 宋体;"><span style="font-size: medium;"><a href="#log">修改日志</a></span></span></big></li>
+</ol>
+<hr style="width: 100%; height: 2px;"><a name="interview"><span style="font-size: medium;"><span style="font-family: 宋体;"><big><big><big><span style="font-weight: bold;">介
+绍</span></big></big></big><br>
+</span></span></a><span style="font-size: medium;"><span style="font-family: 宋体;"><img style="width: 364px; height: 311px;" alt="总体" src="images/interview.png"><br>
+<br>
+&nbsp;
+&nbsp;
+从第一天使用cc开始就觉得我们每天都需要使用的cc的操作有很多都是重复性的工作，这个CCHelper就是为了减少这些重复性操作提高工作效率而写出
+来的。这个CCHelper所提供的功能都是本人在日常使用过程中总结出来的，可以切实提高使用速度和便利的，当然，也不排除这些功能和我个人使用cc的
+习惯有关系，但是我觉得我的使用习惯应该和别人差别不大。目前具有的功能是：自动merge功能，包括merge同一个文件夹下的文件和多个文件夹下的文
+件；文件路径的选择功能，包括选择文件（文件夹）的cc路径①，文件（文件夹）的硬盘路径，快速在浏览器中打开cc浏览器中正在访问的文件夹，配置常用文
+件夹并快速访问，配置CliBuilder的命令包路径并快速访问；ClearQuest功能，包括快速启动CQ，新建变更单，按照一定的模版（可自定义
+模版）提交解决方案；集成一些ClearCase常用的工具，例如ClearCase Windows
+Region的快速切换，快速打开ClearCase服务配置工具等。<br>
+<br>
+&nbsp; &nbsp;
+注意，这个工具在第一次运行后，会在如下3个地方生成3个指向该它的快捷方式：快速启动栏、桌面、cc默认的开始菜单文件夹。如果有同名的话，原cc快捷
+方式会被替换掉。其实，CCHelper可以帮助启动cc，所以用CCHelper的快捷方式替换cc原来的快捷方式是一个建议。否则，为了使用这个工
+具，你必须先启动cc再去运行这个工具，很麻烦。<br>
+&nbsp;<br>
+&nbsp; &nbsp;
+这个工具的原理：CCHelper正常工作所需的信息，例如当前目录，cc浏览器中选择了哪些文件等，都是通过直接访问cc浏览器的有关控件得到的。所
+以，CCHelper实际上就是一个寄生程序，它必须寄生在cc浏览器上才能正常工作。CCHelper正常运行后，你查看windows的任务管理器，
+可以查看到CCHelper这个进程。<br>
+<br>
+&nbsp; &nbsp;
+另外，cc浏览器是可以同时启动多个的，但是CCHelper只能同时有一个在运行，所以CCHelper正常运行后，是不允许有多个cc浏览器同时运行
+的。当然，你完全可以突破CCHelper的这个限制去运行多个cc浏览器，但是，这样一来，可以会造成CCHelper的运行不正常。所以，这是一个取
+舍，这样的限制可能会让一些人觉得用不习惯。目前这个限制正在寻找解决的方法，但是至今无果。<br>
+<br>
+&nbsp; &nbsp;
+关于卸载CC助手。它本身是一个绿色程序，无需卸载，清除的时候：1、把快速启动栏、桌面、cc默认的开始菜单文件夹这3个地方的快捷方式替换成原cc的
+快捷方式；2、把工具有关的文件从硬盘上删除。<br>
+&nbsp;<br>
+&nbsp; &nbsp; 现有的功能都是在日常使用中总结出来的，如果你觉得有什么好点子，不妨发邮件给我：<a target="_top" href="mailto:chenxu8@zte.com.cn">和我联系</a><br>
+<br>
+<br>
+&nbsp;①cc路径：指的是一个文件或者文件夹在cc上的代码路径，把这个cc路径提供给别人，别人就可以知道对应的是自己硬盘上的那个文件
+了。<br>
+</span></span>
+<hr style="width: 100%; height: 2px;"><br>
+<span style="font-family: 宋体;"><span style="font-size: medium;"><a name="merge"><big><big><big><span style="font-weight: bold;">Merge
+功能</span></big></big></big><br>
+</a><img style="width: 133px; height: 112px;" alt="Merge功能" src="images/merge.png"><br>
+<br>
+&nbsp;
+&nbsp;
+这个功能是CCHelper的最元老的功能了，当初最开始写这个工具的目的就是为了达到这个功能了。经过了多次的研究修改后，现在这个功能应该已经很赞
+了，只要配置文件正确，在cc上merge一个或者几个文件、文件夹就简单到只要单击一下鼠标就行。快捷，方便，稳定。丢掉Merge
+Manager繁琐的设置吧，使用这个功能可以说是一劳永逸。</span></span><span style="font-size: medium;"><span style="font-family: 宋体;"><br>
+&nbsp; &nbsp;
+使用起来十分简单，但是，在使用前，需要对这个功能进行一定的配置，请选择“配置…”菜单项。对应的配置文件是：<a href="../mergeConf.ini">mergeConf.ini</a>，请在CCHelper路径中
+寻找这个文件，至于如何配置，请打开这个ini文件，里头有详细说明。<br>
+&nbsp; &nbsp;
+使用这样的配置文件实际上是很无奈的，原因是我现在还搞不清楚cc是如何保存本地view的信息的，一旦搞清除了这点，就可以让这个配置文件尽可能的简
+单，不需要做那么多的配置。有人熟悉这点的，请不吝赐教。<br>
+&nbsp; &nbsp; 本
+功能的原理：实际上还是离不开Merge Manager，最终使用的还是Merge
+Manager。工具根据用户选择的文件或者文件夹，生成Merge Manager能识别的mrgman文件，然后使用Merge
+Manager打开。至于mrgman文件的格式，有兴趣的可以另外联系我，这里没必要缀术。</span></span><br>
+&nbsp; &nbsp; &nbsp; &nbsp;
+现在在搜索待merge文件之前，可以选择update一下目标文件（文件夹），这样一来，就不怕合入一错误的版本了。<br>
+<span style="font-family: 宋体;"><span style="font-size: medium;">&nbsp; &nbsp; <span style="font-weight: bold;">声明一下：这个功能不会对自动merge代码，它仅仅是帮助寻找需要
+merge的代码，所以请放心使用。是否要merge是控制在你手中的。</span><br>
+<br>
+</span></span><span style="font-size: medium;"><span style="font-family: 宋体;"></span></span>
+<hr style="width: 100%; height: 2px;"><span style="font-size: medium;"><span style="font-family: 宋体;"><a name="merge1"></a><span style="font-weight: bold; color: rgb(255, 102, 0);">★ Merge按钮</span><br>
+</span></span>
+<div style="margin-left: 40px;"><span style="font-size: medium;"><span style="font-family: 宋体;">merge
+一个文件夹或者多个文件。在cc上选择需要merge的文件夹或者选定多个文件，然后单击这个按钮，可以完成对选定文件/文件夹的merge操作。</span></span><br>
+<span style="font-size: medium;"><span style="font-family: 宋体;"></span></span></div>
+<span style="font-size: medium;"><span style="font-family: 宋体;"><br>
+</span></span>
+<hr style="width: 100%; height: 2px;"><span style="font-size: medium;"><span style="font-family: 宋体;"><a name="merge2"></a><span style="font-weight: bold; color: rgb(255, 102, 0);">★
+Merge多个文件夹菜单</span><br>
+</span></span>
+<div style="margin-left: 40px;"><span style="font-size: medium;"><span style="font-family: 宋体;">这
+个功能和Merge按钮类似，只是支持同时选择多个文件/文件夹。选择这个菜单后，会有个对话框出来，请按照对话框上的提示操作。</span></span><br>
+<span style="font-size: medium;"><span style="font-family: 宋体;"></span></span></div>
+<span style="font-size: medium;"><span style="font-family: 宋体;"><br>
+</span></span>
+<hr style="width: 100%; height: 2px;"><span style="font-size: medium;"><span style="font-family: 宋体;"><a name="merge3"></a><span style="font-weight: bold; color: rgb(255, 102, 0);">★
+Merge单个文件夹菜单</span><br>
+</span></span>
+<div style="margin-left: 40px;"><span style="font-size: medium;"><span style="font-family: 宋体;">和Merge
+按钮功能一样。</span></span></div>
+<span style="font-size: medium;"><span style="font-family: 宋体;"></span></span>
+<hr style="width: 100%; height: 2px;"><span style="font-size: medium;"><span style="font-family: 宋体;"><br>
+</span></span><span style="font-family: 宋体;"><span style="font-size: medium;"><a name="se">Selection
+菜单<br>
+</a><img style="width: 140px; height: 140px;" alt="selection" src="images/selection.png"><br>
+<br>
+&nbsp; &nbsp;
+这个功能是CCHelper后期增加的功能，主要目的是让cc浏览器和windows的资源管理器无缝结合起来，当然，这是目的了，现在还做不到这么完
+美，但是，改进中…<br>
+</span></span><span style="font-size: medium;"><span style="font-family: 宋体;"><br>
+</span></span><a name="se1"></a><span style="font-weight: bold; color: rgb(255, 102, 0);">★&nbsp;
+复制cc路径</span><br>
+<div style="margin-left: 40px;">选
+择代表cc浏览器中选定的1个或者多个文件、文件夹的cc路径保存在windows的剪切板中。至于和硬盘路径有什么区别，粘贴出来和硬盘路径一对比就知
+道了。这个功能的主要应用场景是：你在填写cq的处理方案的时候，总是要填写修改的文件吧，对了，你可以选择多个需要修改的文件、文件夹然后选择这个菜
+单，然后到cq中去粘贴到待修改文件的区域中去，是不是很方便。比到硬盘上找到这个目录，然后再一个个复制快多了吧，当然，添加待修改文件，还有更加方便
+的方法，在后面有介绍。<br>
+</div>
+<br>
+<hr style="width: 100%; height: 2px;"><br>
+<a name="se2"></a><span style="font-weight: bold; color: rgb(255, 102, 0);">★&nbsp;
+复制硬盘路径</span><br>
+<div style="margin-left: 40px;">把cc浏览器中的1个或者多个文件、文件夹的硬盘路径保存
+到剪切板中。这个功能的应用场景可就多了，例如你想快速访问某个文件什么的，就可以用这个功能了。相信你能找到的应用场景比我知道的还多，呵呵。<br>
+</div>
+<br>
+<hr style="width: 100%; height: 2px;"><br>
+<a name="se3"></a><span style="font-weight: bold; color: rgb(255, 102, 0);">★&nbsp;
+在浏览器中打开…</span><br>
+<div style="margin-left: 40px;">启
+动windows的资源管理器打开当前cc浏览器的目录。这个也是很有用的，应用场景也很多，我当初添加这个功能的目的在于：cc浏览器中的右键菜单和
+windows浏览器的右键菜单差别很大，经常需要使用windows的右键菜单，所以经常需要在windows浏览器中去打开当前cc浏览器的文件夹。
+现在发现，这个功能的应用比我当初想的要广泛的多<br>
+</div>
+<br>
+<hr style="width: 100%; height: 2px;"><br>
+<span style="font-size: medium;"><span style="font-family: 宋体;"></span></span><a name="se4"></a><span style="font-weight: bold; color: rgb(255, 102, 0);">★&nbsp;
+搜索私有文件</span> <span style="color: rgb(255, 0, 0);">new</span><br>
+<div style="margin-left: 40px;"><img style="width: 698px; height: 625px;" alt="search-private" src="images/search-private.png"><br>
+CC
+有一个地方非常不好，可以说是它的很大的缺点。就是没有提供任何工具来自动识别vob中的受控文件和private文件。这个给研发人员带来了诸多的不
+便，有时候甚至会出严重的错误。编码过程中，难免需要新建文件，还有的文件是由IDE自动生成的，而这些文件是必不可少的。在提交代码的过程中就非常容易
+漏提交这部分代码。<br>
+<div style="margin-left: 40px;">
+<ol>
+<li>新建的文件特别是IDE自动生成的文件，本身就容易漏掉；</li>
+<li>CC无法在提交的时候寻找到这部分文件；</li>
+<li>联调或者自测的时候都是使用bugfix上的代码，不会使用集成分支上的代码，这就无法测试到漏提交代码的身上。</li>
+</ol>
+</div>
+于是，等到下一个版本出来了，测试部提单了，才拍大腿发现，怎么就漏了把那个文件提交上去了呢？增加故障泄漏率，增加工作量，恶性循环。不是危言耸听，这
+是我的切身体会。于是提供了这个功能，用于在提交代码之前搜索一下敏感目录下的私有文件，减少上述错误发生的概率。<br>
+<br>
+搜索出来的结果呈现的界面上还提供了一些常见的操作，例如保存所选路径的工具，删除功能，检入，取消检入，与前一个版本的对比版本树，版本历史，对象属性
+等，另外，双击条目还能调用默认的程序来打开文件，如果是一个文件夹，则会在windows浏览器中打开这个目录。</div>
+<br>
+<hr style="width: 100%; height: 2px;"><a name="se5"></a>★&nbsp;<span style="color: rgb(255, 102, 0); font-weight: bold;">常用文件夹</span><br>
+<div style="margin-left: 40px;"><img style="width: 285px; height: 204px;" alt="常用文件夹" src="images/favorite.png"><br>
+每个人总是需要要维护多个模块，这些模块一般在硬盘上总是存在不同的位置，经常需要快速切换到对应的目录中去，如果你不想一级一级目录去找，就使用这个功
+能吧。把你需要用的常用目录都配置起来，然后可以快速来访问了。对应的配置文件是：<a href="../favourite.ini">favourite.ini</a>，
+请在CCHelper路径中寻找这个文件，里头有详细说明。<br>
+</div>
+<br>
+<hr style="width: 100%; height: 2px;"><br>
+<a name="se6"></a><span style="font-weight: bold; color: rgb(255, 102, 0);">★&nbsp;
+CliBuilier助手</span><br>
+<div style="margin-left: 40px;"><img style="width: 273px; height: 188px;" alt="CliBuilder助手" src="images/clibuilder.png"><br>
+这个是给使用CliBuiler的人提供的。<br>
+用过CliBuiler的人，肯定对这个工具不满意，特别是打开某个包下的命令，使用十分不方便，这个功能就是为了弥补这个不方便，快速访问已配置的包中
+的命令的。对应的配置文件是：<a href="../clibuilder.ini">clibuilder.ini</a>，
+请在CCHelper路径中寻找这个文件，里头有详细说明。</div>
+<span style="font-size: medium;"><span style="font-family: 宋体;"></span></span>
+<hr style="width: 100%; height: 2px;"><span style="font-size: medium;"><span style="font-family: 宋体;"><br>
+</span></span><span style="font-family: 宋体;"><span style="font-size: medium;"><a name="cq"><big style="font-weight: bold;"><big><big>ClearQuest
+菜单</big></big></big><br>
+</a><img style="width: 239px; height: 112px;" alt="ClearQuest助手" src="images/cq.png"><br>
+<br>
+</span></span>&nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp;
+CC和CQ是不分家的。这里把平时使用cq的一些常用的功能都抽取出来，本来这部分功能是存放在CQ上的，后来还是集成到了CCHelper中来，虽然有
+些许使用起来不很方便，但是却能提供更多的有用的功能。<br>
+<br>
+<a name="cq1"></a><span style="font-weight: bold; color: rgb(255, 102, 0);">★&nbsp;
+启动CQ</span><br>
+<div style="margin-left: 40px;">呵呵，懒人总是有懒人的办法，每天都启动CQ是不是很烦？
+那就使用这个功能吧，只要在配置文件中配置好用户名和密码，就可以轻松登录CQ了。<br>
+</div>
+<br>
+<hr style="width: 100%; height: 2px;"><br>
+<a name="cq2"></a><span style="font-weight: bold; color: rgb(255, 102, 0);">★&nbsp;
+新建变更单</span><br>
+<div style="margin-left: 40px;">这个功能恐怕测试部的兄弟们会喜欢，平时提个单子需要填那
+么老多的东西，实际上，很多都是机械的重复。一句话，只要在配置文件中配置好，一切都是自动的。<br>
+</div>
+<span style="font-size: medium;"><span style="font-family: 宋体;"><br>
+</span></span>
+<hr style="width: 100%; height: 2px;"><span style="font-size: medium;"><span style="font-family: 宋体;"><br>
+</span></span><a name="cq3"></a><span style="font-weight: bold; color: rgb(255, 102, 0);">★&nbsp;
+提交处理方案</span><br>
+<div style="margin-left: 40px;">按照如下的格式对CQ中选定的单子提交处理方案，当然，这
+个功能本身不可能帮你把方案内容都自动生成，只是尽可能多的把一些可以收集到的东西帮你生成。包括如下内容：<br>
+<br>
+<div style="margin-left: 40px;"><code>故障现象：<span style="color: blue;">机架图f1帮助异常</span><br>
+受&nbsp;理&nbsp;人：<span style="color: blue;">陈旭145812
+（2008-5-29 16:49:43）</span><br>
+故障定性： <span style="color: blue;">&lt;问题&gt;</span><br>
+波及范围：<br>
+波 及&nbsp;人：<span style="color: blue;">陈旭145812</span><br>
+波及版本：<span style="color: blue;">ZXUN-CSCF(OMM)V4.02.40.I3</span><br>
+解决方案：<span style="color: blue;">见原因分析</span><br>
+测试范围：<br>
+修改文件：（可用菜单“<a href="#cq4">添加已选的文件</a>”自动完成）</code><br>
+</div>
+<br>
+其中，蓝色部分是自动生成的。另外，这一块已经支持可以设置自定义的解决方案了，在配置文件中有个开关，正确设置后，再在配置文件中把自定义的内容配置上
+就行了，关于这个地方详细配置，打开<a href="../clearquest.ini">clearquest.in</a>i，
+有详细的说明。<br>
+</div>
+<span style="font-size: medium;"><span style="font-family: 宋体;"><br>
+</span></span>
+<hr style="width: 100%; height: 2px;"><span style="font-size: medium;"><span style="font-family: 宋体;"><br>
+</span></span><a name="cq4"></a><span style="font-weight: bold; color: rgb(255, 102, 0);">★&nbsp;
+添加已选的文件</span><br>
+<div style="margin-left: 40px;">这个功能是配合“<a href="#cq3">提
+交处理方案</a>”来使用的。当你提交了方案
+后，想在“修改文件”一栏中增加这个单子需要修改的文件的时候，可以使用它：在cc上选择1个或者多个文件，然后选择这个菜单就可以把这些文件都添加到
+“修改文件”中去了。<br>
+</div>
+<span style="font-size: medium;"><span style="font-family: 宋体;"><br>
+</span></span>
+<hr style="width: 100%; height: 2px;"><span style="font-size: medium;"><span style="font-family: 宋体;"><br>
+</span></span><a name="cq5"></a><span style="font-weight: bold; color: rgb(255, 102, 0);">★&nbsp;
+配置</span><br>
+<div style="margin-left: 40px;">打开这个功能的配置文件，对应的配置文件是：<a href="../clearquest.ini">clearquest.ini</a>，请在CCHelper路
+径中寻找这个文件，里头有详细说明。<br>
+</div>
+<hr style="width: 100%; height: 2px;"><br>
+<big><big><big><a style="font-weight: bold;" name="log">修改日志</a></big></big></big><br>
+<ol>
+<li><span style="font-family: 宋体;"><span style="font-size: medium;">2007-12-1</span></span><br>
+<span style="font-family: 宋体;"><span style="font-size: medium;">新建。仅具备Merge功能，而且该功能不可靠，低效率；</span></span>
+</li>
+<li><span style="font-family: 宋体;"><span style="font-size: medium;">2008-1月<br>
+添加Selection菜单；</span></span> </li>
+<li><span style="font-family: 宋体;"><span style="font-size: medium;">2008-4-26<br>
+添加CliBuilder菜单；</span></span> </li>
+<li><span style="font-family: 宋体;"><span style="font-size: medium;">2008-4-29<br>
+增强Selection菜单功能，增加快速访问文件夹；</span></span> </li>
+<li><span style="font-family: 宋体;"><span style="font-size: medium;">2008-4-29<br>
+把Merge的配置菜单移入到Merge按钮的下拉菜单中；</span></span> </li>
+<li><span style="font-family: 宋体;"><span style="font-size: medium;">2008-5-4<br>
+修改Merge功能，大大提高Merge的可用性、可靠性和效率。这是一个很具有意义的修改。另，完善Merge功能的帮助；</span></span>
+</li>
+<li><span style="font-family: 宋体;"><span style="font-size: medium;">2008-5-4<br>
+为Selection菜单和CliBuilder菜单添加分割条；</span></span> </li>
+<li><span style="font-family: 宋体;"><span style="font-size: medium;">2008-5-8<br>
+把Clibuilder合入到Selection菜单中去。</span></span> </li>
+<li><span style="font-family: 宋体;"><span style="font-size: medium;">2008-5-10<br>
+为CQ添加菜单：“添加已选文件”，增强提交处理方案的功能；</span></span> </li>
+<li><span style="font-family: 宋体;"><span style="font-size: medium;">2008-5-19<br>
+添加CCHelper的重启功能；</span></span> </li>
+<li><span style="font-family: 宋体;"><span style="font-size: medium;">2008-5-23<br>
+完善帮助htm文件</span></span> </li>
+<li><span style="font-family: 宋体;"><span style="font-size: medium;">2008-7-4<br>
+添加CQ处理方案的自定义“故障原因分析”、“方案内容”。</span></span> </li>
+<li><span style="font-family: 宋体;"><span style="font-size: medium;">2008-7-4<br>
+修改merge功能的当已经有一个files2merge.mrgman窗口存在的时候无法重新生成mrgman文件的bug。</span></span>
+</li>
+<li><span style="font-family: 宋体;"><span style="font-size: medium;">2008-7-4<br>
+添加“ClearCase切换工具”、“ClearCase服务”到选项菜单</span></span> </li>
+<li><span style="font-family: 宋体;"><span style="font-size: medium;">2888-8-2<br>
+修改cc助手生成窗口的方式，与cc结合更加紧密，去除不需要的按钮。</span></span> </li>
+<li><span style="font-family: 宋体;"><span style="font-size: medium;">2008-8-6<br>
+</span></span>进一步完善了帮助文件。更新了部分内容</li>
+<li><span style="font-family: 宋体;"><span style="font-size: medium;">2008-8-13<br>
+</span></span>在Selection菜单中添加功能“搜索私有文件”，实现了单击鼠标就能扫描到当前目录
+的私有文件和被check out的文件。</li>
+<li>2008-8-15<br>
+修改了 CQ菜单中“<a href="#cq4">添加已选文件</a>”功能的bug：添加后，在CQ上点了
+提交方案后，先前提交的内容不生效。</li>
+<li>2008-8-20<br>
+在Merge操作之前增加了自动update目标文件、文件夹的功能。</li>
+<li>2008-8-29<br>
+给“搜索私有文件”功能进行了加强，现在不仅仅提供搜索结果，还能在搜索的结果上进行一些常见的操作。</li>
+<li>2009-2-13<br>
+增加抢CC工具到选项菜单中。</li>
+<li>2009-4-13<br>
+<ul>
+<li>决定不再维护集成到CC上的工具栏模式的CC助手，只维护应用程序版。</li>
+<li>增加“新建单元测试单”功能。</li>
+<li>增加单击窗口的叉叉后关闭程序。</li>
+<li>去掉每次都创建自身快捷方式的功能</li>
+<li>去掉应用程序版的重启功能</li>
+<li>加入设置本程序窗口置顶功能</li>
+<li>完善了“关于”菜单，主要是用于显示版本和更新日期</li>
+</ul></li><li>2009-4-14<br>修改了新建单元测试单的一个bug：故障详细描述用错了故障重现方法的内容。</li><li>2009-4-22<br>增加ClearCase菜单中的“审核通过”功能。</li><li>2009-4-23<br>增加ClearCase菜单中的“反馈研究结果”功能。主要是增加了一个研究结果的模版。</li><li>2009-4-29<br>修改ClearCase菜单中的“反馈研究结果”模版。增加了一些项目的默认值。</li><li>2009-5-26<br>修改bug：有的情况下无法自动登陆CQ。</li></ol>
+<hr style="width: 100%; height: 2px;"><br>
+<br>
+<span style="font-size: medium;"><span style="font-family: 宋体;"></span></span><span style="font-size: medium;"><span style="font-family: 宋体;"></span></span>
+</body></html>

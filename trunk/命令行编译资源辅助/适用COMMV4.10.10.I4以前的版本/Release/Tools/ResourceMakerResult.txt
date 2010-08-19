@@ -1,0 +1,3 @@
+######################################### COMM自身脚本，应用无需改动 #########################################
+comm-i18n = Embed("comm-mml-api-i18n.xml", mimeType="application/octet-stream")
+

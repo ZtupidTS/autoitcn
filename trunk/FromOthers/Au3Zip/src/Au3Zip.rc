@@ -1,0 +1,27 @@
+#include <windows.h> // include for version info constants
+
+1 VERSIONINFO
+FILEVERSION 0, 1, 0, 408
+PRODUCTVERSION 0, 1, 0, 0
+FILETYPE VFT_APP
+{
+   BLOCK "StringFileInfo"
+   {
+      BLOCK "040904E4"
+      {
+         VALUE "CompanyName", "Stephen Podhajecki"
+         VALUE "FileVersion", "0.1.0.408"
+         VALUE "FileDescription", "AutoIt3 Zip Plugin. Developed on Code::Blocks (Win98 Test)"
+         VALUE "InternalName", "Au3Zip"
+         VALUE "LegalCopyright", ""
+         VALUE "LegalTrademarks", ""
+         VALUE "OriginalFilename", "Au3Zip"
+         VALUE "ProductName", "Au3Zip.dll"
+         VALUE "ProductVersion", "0.1.0.0"
+      }
+   }
+   BLOCK "VarFileInfo"
+   {
+      VALUE "Translation", 0x0409, 1200
+   }
+}

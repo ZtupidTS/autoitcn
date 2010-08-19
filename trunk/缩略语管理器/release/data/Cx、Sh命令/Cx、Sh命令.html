@@ -1,0 +1,121 @@
+<head>
+	<title>Cx、Sh命令</title>
+</head>
+<body>
+<font face="Courier New" color=#0000ff size=5><b><img alt="Cx Sh 命令.JPG" src=".\1222332182_66488.gif" /><br />Cx命令</b></font> 
+<table border=1>
+<tbody>
+<tr>
+<th>缩略语</th>
+<th>命令来源</th>
+<th>命令目标</th>
+<th>用途</th></tr>
+<tr>
+<td><a title=User-Authentication-Request href="../UAR/UAR.html" name=User-Authentication-Request>UAR</a></td>
+<td>ICSCF</td>
+<td>HSS</td>
+<td>该命令用于ICSCF与HSS之间，在SIP注册过程中用于获取SCSCF名称或SCSCF能力以进行SCSCF选择；在SIP注册解除过程中，当SIP方法是REGISTER时用于获取SCSCF名称</td></tr>
+<tr>
+<td><a href="../UDA/UDA.html">UDA</a></td>
+<td>HSS</td>
+<td>ICSCF</td>
+<td>同上</td></tr>
+<tr>
+<td><a href="../SAR/SAR.html">SAR</a></td>
+<td>SCSCF</td>
+<td>HSS</td>
+<td>该命令用于SCSCF和HSS之间，用于为HSS更新SCSCF名字和下载用户配置数据到SCSCF</td></tr>
+<tr>
+<td><a href="../SAA/SAA.html">SAA</a></td>
+<td>HSS</td>
+<td>SCSCF</td>
+<td>同上</td></tr>
+<tr>
+<td><a href="../SAA/SAA.html">LIR</a></td>
+<td>ICSCF</td>
+<td>HSS</td>
+<td>icscsf收到sip register消息的时候使用uar来寻找scscf，如果iscscf收到非sip register消息的时候，使用LIR命令。</td></tr>
+<tr>
+<td><a href="../LIA/LIA.html">LIA</a></td>
+<td>HSS</td>
+<td>ICSCF</td>
+<td>同上</td></tr>
+<tr>
+<td><a href="../MAR/MAR.html">MAR</a></td>
+<td>SCSCF</td>
+<td>HSS</td>
+<td>该命令用于SCSCF和HSS之间，用于交换信息以支持终端用户和归属IMS网络之间的认证过程</td></tr>
+<tr>
+<td><a href="../MAA/MAA.html">MAA</a></td>
+<td>HSS</td>
+<td>SCSCF</td>
+<td>同上</td></tr>
+<tr>
+<td><a href="../RTR/RTR.html">RTR</a></td>
+<td>SCSCF</td>
+<td>HSS</td>
+<td>该命令用于SCSCF和HSS之间，HSS管理性得解除该用户的一个或者多个公共用户身份的注册</td></tr>
+<tr>
+<td><a href="../RTA/RTA.html">RTA</a></td>
+<td>HSS</td>
+<td>SCSCF</td>
+<td>同上</td></tr>
+<tr>
+<td><a href="../PPR/PPR.html">PPR</a></td>
+<td>HSS</td>
+<td>SCSCF</td>
+<td>该命令用于SCSCF和HSS之间，用于当HSS中的用户配置数据被一个管理操作修改，而这些数据需要更新给SCSCF的时候</td></tr>
+<tr>
+<td><a href="../PPA/PPA.html">PPA</a></td>
+<td>SCSCF</td>
+<td>HSS</td>
+<td>同上</td></tr></tbody></table><br /><font face="Courier New" color=#0000ff size=5><b><br />Sh命令</b></font> 
+<table border=1>
+<tbody>
+<tr>
+<th>缩略语</th>
+<th>命令来源</th>
+<th>命令目标</th>
+<th>用途</th></tr>
+<tr>
+<td><a href="../UDR/UDR.html">UDR</a></td>
+<td>AS</td>
+<td>HSS</td>
+<td>该命令用于传送特定用户的用户数据</td></tr>
+<tr>
+<td><a href="../UDA/UDA.html">UDA</a></td>
+<td>HSS</td>
+<td>AS</td>
+<td>同上</td></tr>
+<tr>
+<td><a href="../PUR/PUR.html">PUR</a></td>
+<td>AS</td>
+<td>HSS</td>
+<td>该命令用于更新HSS中的透明数据</td></tr>
+<tr>
+<td><a href="../PUA/PUA.html">PUA</a></td>
+<td>HSS</td>
+<td>AS</td>
+<td>同上</td></tr>
+<tr>
+<td><a href="../SNR/SNR.html">SNR</a></td>
+<td>AS</td>
+<td>HSS</td>
+<td>该命令用于要求/取消对用户数据的订阅，当这些数据发生变化的时候就要求通知</td></tr>
+<tr>
+<td><a href="../SNA/SNA.html">SNA</a></td>
+<td>HSS</td>
+<td>AS</td>
+<td>同上</td></tr>
+<tr>
+<td><a href="../PNR/PNR.html">PNR</a></td>
+<td>HSS</td>
+<td>AS</td>
+<td>该命令用于发送变化的数据给AS</td></tr>
+<tr>
+<td><a href="../PNA/PNA.html">PNA</a></td>
+<td>AS</td>
+<td>HSS</td>
+<td>同上</td></tr></tbody></table>
+</body>
+</html>

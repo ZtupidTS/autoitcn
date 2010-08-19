@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Main-Class: rath.jmsn.Main
+Class-Path: lib/msnm.jar
+Created-By: Jangho Hwang, rath@xrath.com

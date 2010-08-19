@@ -1,0 +1,164 @@
+# $Id: message.properties.it_IT,v 1.4 2004/09/07 09:50:57 xrath Exp $
+file.transfer.complete = File transfer completed: "{0}"
+who.added.me = Sei stato aggiunto da {0}.
+add.approve = Acctta e aggiungi questo utente.
+add.reject = Rigetta e blocca questo utente.
+
+button.add = Aggiungi
+button.ok = OK
+button.close = Chiudi
+button.cancel = Cancella
+button.find = Cerca
+button.file.send = InviaFile
+button.submit = Inoltra
+
+checkbox.use = Usa
+
+title.adduser = Aggiungi nuovo utente
+title.addgroup = Aggiungi nuovo gruppo
+title.changefont = Cambia Font
+title.alarm = Allarme
+title.login = Accedi(Logon)
+title.option = Opzioni
+title.bugreport = Invia bug report
+title.reqfeature = Richiedi nuove caratteristiche
+title.loginfail = Logon Fallito
+title.renameuser = Rename friend's nick
+
+add.fail.overflow = Non posso aggiungere altri utenti, lista piena.
+add.fail.exist = Utente gi?esistente.
+add.fail.unknown-user = Utente sconosciuto
+add.ok = {0} ?stato aggiunto.
+add.email = indirizzo E-mail
+add.email.detail = Inserire l'indirizzo e-mail.
+
+label.loginname = Indirizzo e-mail dell'utente
+label.password = Password
+label.remember.password = Mantieni la password su questo computer
+label.initstatus = Stato iniziale
+label.friendlyname = Nome Amico
+label.sound.login = Emetti un suono all' arrivo di un' altro utente
+label.sound.msg = Emetti un suono all'arrivo di un messaggio
+label.folder.download = Directory per di download dei files
+label.folder.chatlog = Directory per i log della chat
+label.login.please = Prego accedere prima!
+label.subject = Argomento
+label.emoticon = Emoticon
+label.font = Font
+label.splash.clickme = Premi per accedere
+label.splash.onlogin = Sto accedendo, aspettare prego...
+label.splash.onlogout = Sto uscendo...
+label.buddy.backimg = Schegli immagine di sfondo
+label.transparent.level = Livello Trasparenza
+label.fontsize = Dimensione
+label.fontproperties = Effetto
+label.fontpreview = Anteprima
+label.fontpreviewstring = Abc
+label.fontbold = Grasetto
+label.fontitalic = Corsivo
+label.fontunderline = Sottolineato
+label.fontstrikethrough = Barrato
+label.israndomcolor = Colore Casuale
+label.choosefontcolor = Scegli Colore del Font
+label.chooselistfont.color = Scegli Colore dei Font della lista amici
+label.timestamp = Visualizza timestamps in chat
+label.emoticon.view = Visualizza emoticons in chat
+label.inboxunread = Inbox Unread
+
+chatdlg.filesend.request.ok = Invia una richiesta file "{1}" to {0}
+chatdlg.filesend.request.fail = Non posso inviare file.
+chatdlg.filesend.accept = {0} ha accettato la vostra richiesta. Inizio trasferimento File.
+chatdlg.filesend.reject = {0} ha rifiutato la vostra richiesta.
+chatdlg.filerecv.notify = {0} sta cercando di inviarvi {1} files. Se desiderate accettare, premete (Alt+T) oppure (Alt+D)
+chatdlg.filerecv.reject = ha rigettato la richiesta di trasferimento file.
+chatdlg.msg.offline = {0} ha cambiato il suo stato in OFFLINE
+chatdlg.msg.invite = Richiede invito{0}
+chatdlg.msg.top = Buon divertimento e ricordatevi di non scrivere MAI le vostre password o i vostri numeri di carta di credito in chat!\n
+chatdlg.msg.typing = {0} digitando... {1}
+chatdlg.msg.notsend.offline = non posso inviare mentre lo stato ?impostato su 'nascosto'
+chatdlg.msg.transfer.4eva = Il file verr?finito di scaricare, anche se chiudete questa finestra.
+chatdlg.msg.whojoin = {0}, {1} ha raggiunto la chat.
+chatdlg.msg.whopart = {0}, {1} ha abbandonato la chat.
+chatdlg.msg.timeout = Disconnesso siccome questo utente non ha inviato messaggi per {0} minuti.
+chatdlg.query.dirsend.title = Confirma il trasferimento di una directory
+chatdlg.query.dirsend.content = Sta per inviare una directory.\n Volete comprimerla in un archivio ZIP? (altrimenti occuperebbe molto spazio)
+chatdlg.chat = {0} dice:\n
+chatdlg.chat.opened = Sessione di chat stabilita.
+chatdlg.chat.error = non posso inviare questo messaggio:\n{0}
+chatdlg.msg.ssclose = la sessione non pu?stabilirsi per problemi di MSN.
+
+renamedlg.uname = Make Friend's NickName
+
+remdlg.query.remove.title = Rimuovi l'utente
+remdlg.query.remove.content = Siete sicuri di voler rimuovere {0}?
+remgdlg.query.remove.title = Remuovi il gruppo
+remgdlg.query.remove.content = Volete veramente rimuovere {0}?
+remgdlg.exist.title = Non posso rimuovere il gruppo
+remgdlg.exist.content = Muovere l'utente di questo gruppo ad un altro gruppo prima
+remgdlg.gname = Nome del gruppo da creare
+remgdlg.query.gname = Nome del gruppo da cambiare
+
+zipdlg.msg.fail = compressione fallita: {0}
+zipdlg.msg.ready = Pronto per comprimere la directory
+zipdlg.msg.working = Compressione...
+
+status.online = Online
+status.offline = Offline
+status.away = Distante dal computer
+status.brb = Di ritorno prossimamente
+status.busy = Occupato
+status.idle = Impegnato
+status.hidden = Nascosto
+status.eat = A mangiare un boccone
+status.phone = Al telefono
+status.unknown = stato sconosciuto (o meglio: non sono affari tuoi)
+
+menu.file = File
+menu.file.mnemonic = F
+menu.item.login = Accedi...
+menu.item.logout = Disconnetti
+menu.item.exit = Esci
+
+menu.view = Apri
+menu.view.mnemonic = V
+menu.item.friendview = Come visualizzare gli utenti
+menu.item.friendview.fn = nome degli amici
+menu.item.friendview.ln = indirizzo e-mail
+menu.item.friendview.fnln = nome amici e indirizzo e-mail
+menu.item.friendview.my = By friendly name what I made
+menu.item.refresh = Aggiorna la lista amici
+menu.item.off.ignore = Nascondi gli utenti Offline
+menu.item.alwaysontop = Sempre in primo piano
+menu.item.lnf = Look and feel
+menu.item.locale = Locale
+
+menu.tool = Strumenti
+menu.tool.mnemonic = T
+menu.item.chstatus = Cambia il mio stato
+menu.item.adduser = Aggiungi un nuovo utente...
+menu.item.renameuser = Make user's nickname
+menu.item.removeuser = Rimuovi l'utente
+menu.item.addgroup = Aggiungi un nuovo gruppo...
+menu.item.renamegroup = Rinomina il gruppo
+menu.item.removegroup = Rimuovi il gruppo
+menu.item.option = Opzioni(O)...
+menu.item.option.mnemonic = O
+
+menu.help = Ajuto
+menu.help.mnemonic = H
+menu.item.bugreport = Invia un bug report
+menu.item.reqfeature = Richiedi nuove caratteristiche
+menu.item.about = A proposito di jMSN...
+
+event.login = LOGON {1} ({0})
+event.logout.1 = LOGOUT {0}
+event.logout.2 = LOGOUT {1} ({0})
+event.ring = ChatRequest {1} ({0})
+
+err.209 = Richiedere nomi di amici non ?permesso su MSN.
+err.911 = Nome utente o password errati.\nRiprovare.
+err.921 = Server MSN troppo occupato per connettersi.
+
+label.photo.show.me = Use my photo
+label.photo.show.other = View friend's photo on chat
+label.photo.title = Select Your Photo

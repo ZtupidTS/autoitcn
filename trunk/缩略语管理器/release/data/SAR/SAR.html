@@ -1,0 +1,7 @@
+<html>
+<body>
+<font size=2>
+用于scscf与hss通信。它在icscf找到scscf后，icscsf就转发sip register注册请求给scscf。当scscf接收到icscsf的sip register注册请求时被使用。<br>包含：<br>1、pvi；<br>2、pui；<br>3、路由信息，如果scscsf知道hss的地址，该信息就包含hss的地址，如果scscf不知道hss地址，那么它就包含了slf目标域<br>4、scscf的名字，scscf的sip uri<br>5、服务器分配类型，服务器分配类型包含有管这个操作维护被执行的原因信息（如，由于注册、重新注册、与非注册用户的会话，用户发起或者scscf发起的注册接触，以及认证失败等的原因）<br>6、用户数据已经可用<br>7用户数据请求类型。<br><br>icscf-hss: UAR, UAA<br>scscf-hss: SAR, SAA<br>解除注册：RTR, RTA
+<br></font>
+</body>
+</html>
